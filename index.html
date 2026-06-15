@@ -1223,9 +1223,7 @@
     }
 
     function imageForActivity(item, category) {
-      if (item.image) return item.image;
-      if (!item.source) return fallbackImage(category);
-      return `https://s.wordpress.com/mshots/v1/${encodeURIComponent(item.source)}?w=900`;
+      return item.image || fallbackImage(category);
     }
 
     function renderCardImage(item, category) {
@@ -1234,7 +1232,7 @@
       return `
             <figure class="card-image">
               <img src="${src}" alt="${item.title} activity image" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${fallback}'">
-              <figcaption>Official activity page preview</figcaption>
+              <figcaption>Activity image</figcaption>
             </figure>`;
     }
     function enhancedRender() {
