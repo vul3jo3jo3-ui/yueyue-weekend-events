@@ -281,6 +281,39 @@
       overflow: hidden;
     }
 
+
+    .card-image {
+      margin: -18px -18px 0;
+      aspect-ratio: 16 / 9;
+      background: linear-gradient(135deg, #eef5ec, #f4e8f1);
+      border-bottom: 1px solid var(--line);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+      filter: saturate(.95) contrast(.98);
+    }
+
+    .card-image figcaption {
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      max-width: calc(100% - 20px);
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: rgba(255, 253, 249, .88);
+      color: var(--focus);
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.4;
+      box-shadow: 0 8px 18px rgba(64, 49, 35, .12);
+    }
     .card::before {
       content: "";
       position: absolute;
@@ -1080,7 +1113,7 @@
       });
     });
 
-    render();
+    // Initial rendering is handled by enhancedRender after filters are ready.
 
     const typeFilter = document.querySelector("#typeFilter");
     const dateFilter = document.querySelector("#dateFilter");
@@ -1164,6 +1197,46 @@
       return [format(saturday), format(sunday)];
     }
 
+
+    function fallbackImage(category) {
+      const themes = {
+        performance: ["#ede7f4", "#d8aec8", "??璅?],
+        exhibition: ["#e7f0f4", "#b7cfc2", "撅汗???拚尹"],
+        workshop: ["#e1f1e7", "#d5aa8e", "????撽?],
+        outdoor: ["#fbecd0", "#a8c3a2", "?嗅?瘣餃?"]
+      };
+      const theme = themes[category] || themes.exhibition;
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 506">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="${theme[0]}"/>
+            <stop offset="1" stop-color="${theme[1]}"/>
+          </linearGradient>
+        </defs>
+        <rect width="900" height="506" fill="url(#g)"/>
+        <circle cx="155" cy="115" r="86" fill="rgba(255,255,255,.34)"/>
+        <circle cx="724" cy="388" r="128" fill="rgba(255,255,255,.28)"/>
+        <path d="M92 358 C230 250, 314 414, 458 306 S706 184, 812 292" fill="none" stroke="rgba(255,255,255,.64)" stroke-width="24" stroke-linecap="round"/>
+        <text x="54" y="452" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="46" font-weight="700" fill="rgba(70,61,52,.72)">${theme[2]}</text>
+      </svg>`;
+      return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+    }
+
+    function imageForActivity(item, category) {
+      if (item.image) return item.image;
+      if (!item.source) return fallbackImage(category);
+      return `https://s.wordpress.com/mshots/v1/${encodeURIComponent(item.source)}?w=900`;
+    }
+
+    function renderCardImage(item, category) {
+      const src = imageForActivity(item, category);
+      const fallback = fallbackImage(category);
+      return `
+            <figure class="card-image">
+              <img src="${src}" alt="${item.title} 瘣餃???" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${fallback}'">
+              <figcaption>瘣餃?摰?葬??/figcaption>
+            </figure>`;
+    }
     function enhancedRender() {
       const activeFilter = document.querySelector(".tab.active")?.dataset.filter || "all";
       const selectedType = typeFilter.value;
