@@ -1200,10 +1200,10 @@
 
     function fallbackImage(category) {
       const themes = {
-        performance: ["#ede7f4", "#d8aec8", "??璅?],
-        exhibition: ["#e7f0f4", "#b7cfc2", "撅汗???拚尹"],
-        workshop: ["#e1f1e7", "#d5aa8e", "????撽?],
-        outdoor: ["#fbecd0", "#a8c3a2", "?嗅?瘣餃?"]
+        performance: ["#ede7f4", "#d8aec8", "Performance"],
+        exhibition: ["#e7f0f4", "#b7cfc2", "Exhibition"],
+        workshop: ["#e1f1e7", "#d5aa8e", "Workshop"],
+        outdoor: ["#fbecd0", "#a8c3a2", "Outdoor"]
       };
       const theme = themes[category] || themes.exhibition;
       const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 506">
@@ -1221,7 +1221,6 @@
       </svg>`;
       return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
     }
-
     function imageForActivity(item, category) {
       if (item.image) return item.image;
       if (!item.source) return fallbackImage(category);
@@ -1233,8 +1232,8 @@
       const fallback = fallbackImage(category);
       return `
             <figure class="card-image">
-              <img src="${src}" alt="${item.title} 瘣餃???" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${fallback}'">
-              <figcaption>瘣餃?摰?葬??/figcaption>
+              <img src="${src}" alt="${item.title} activity image" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${fallback}'">
+              <figcaption>Official activity page preview</figcaption>
             </figure>`;
     }
     function enhancedRender() {
