@@ -10,7 +10,7 @@
       --muted: #64707a;
       --line: #e6ddd1;
       --paper: #fbf7f1;
-      --panel: rgba(255, 255, 255, 0.88);
+      --panel: rgba(255, 255, 255, 0.9);
       --mint: #e4f0e8;
       --mint-ink: #3b624e;
       --amber: #f8ebd1;
@@ -90,7 +90,7 @@
 
     .lead {
       margin: 0;
-      max-width: 900px;
+      max-width: 920px;
       color: var(--muted);
       font-size: 18px;
     }
@@ -150,9 +150,7 @@
       white-space: nowrap;
     }
 
-    .tab {
-      padding: 9px 14px;
-    }
+    .tab { padding: 9px 14px; }
 
     .tab.active {
       border-color: #6f6253;
@@ -160,9 +158,7 @@
       color: #fff;
     }
 
-    main {
-      padding: 24px 0 54px;
-    }
+    main { padding: 24px 0 54px; }
 
     .notice,
     .filter-panel,
@@ -233,9 +229,7 @@
     }
 
     .soft-btn,
-    .link-btn {
-      padding: 10px 14px;
-    }
+    .link-btn { padding: 10px 14px; }
 
     .soft-btn {
       background: #fffaf3;
@@ -273,17 +267,23 @@
       border: 1px solid var(--line);
       border-radius: 20px;
       padding: 16px;
-      background: rgba(255, 255, 255, 0.92);
-      box-shadow: var(--shadow);
+      background: rgba(255, 255, 255, 0.84);
+      box-shadow: 0 16px 32px rgba(80, 60, 44, 0.08);
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.3;
     }
 
     .card-image {
       margin: 0;
-      overflow: hidden;
-      border-radius: 16px;
+      position: relative;
       aspect-ratio: 16 / 9;
-      background: #f3ede3;
-      border: 1px solid rgba(124, 108, 90, 0.12);
+      border-radius: 16px;
+      overflow: hidden;
+      background: linear-gradient(140deg, #efe7db, #ddebe2);
     }
 
     .card-image img {
@@ -291,21 +291,19 @@
       height: 100%;
       object-fit: cover;
       display: block;
-      filter: saturate(0.96) contrast(0.99);
     }
 
     .card-image figcaption {
       position: absolute;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-    }
-
-    .card h3 {
-      margin: 0;
-      font-size: 24px;
-      line-height: 1.25;
+      left: 12px;
+      bottom: 10px;
+      max-width: calc(100% - 24px);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      color: #fff;
+      background: rgba(36, 48, 56, 0.58);
+      backdrop-filter: blur(6px);
     }
 
     .tag-row {
@@ -317,28 +315,29 @@
     .tag {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      padding: 6px 10px;
+      min-height: 30px;
+      padding: 4px 10px;
       border-radius: 999px;
       font-size: 13px;
       font-weight: 700;
     }
 
-    .tag.info { background: var(--sky); color: var(--sky-ink); }
-    .tag.type { background: var(--lavender); color: var(--lavender-ink); }
     .tag.good { background: var(--mint); color: var(--mint-ink); }
     .tag.warn { background: var(--amber); color: var(--amber-ink); }
     .tag.no { background: var(--rose); color: var(--rose-ink); }
-    .tag.time { background: #f4ece4; color: #755c44; }
+    .tag.info { background: var(--sky); color: var(--sky-ink); }
+    .tag.time { background: var(--lavender); color: var(--lavender-ink); }
+    .tag.type { background: #efe7df; color: #6b5448; }
 
     .summary {
       margin: 0;
       color: var(--muted);
+      font-size: 15px;
     }
 
     dl {
       display: grid;
-      grid-template-columns: 110px 1fr;
+      grid-template-columns: 120px 1fr;
       gap: 8px 12px;
       margin: 0;
     }
@@ -348,46 +347,37 @@
       font-weight: 700;
     }
 
-    dd {
-      margin: 0;
-    }
+    dd { margin: 0; }
 
     .links {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .link-btn:hover,
-    .soft-btn:hover,
-    .tab:hover {
-      transform: translateY(-1px);
+      gap: 10px;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      overflow: hidden;
-      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.82);
       border: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.92);
+      border-radius: 18px;
+      overflow: hidden;
       box-shadow: var(--shadow);
     }
 
-    th,
-    td {
-      padding: 14px 12px;
+    th, td {
+      padding: 12px 14px;
       border-bottom: 1px solid var(--line);
       vertical-align: top;
       text-align: left;
+    }
+
+    thead th {
+      background: rgba(244, 239, 230, 0.92);
       font-size: 14px;
     }
 
-    th {
-      background: rgba(245, 238, 228, 0.88);
-    }
-
-    tr:last-child td { border-bottom: 0; }
+    tbody tr:last-child td { border-bottom: none; }
 
     .sources {
       margin-top: 28px;
@@ -445,9 +435,9 @@
   <header>
     <div class="wrap hero">
       <div>
-        <p class="eyebrow">更新日期 2026-06-27｜依 SOP 逐站查詢，僅保留未來 30 天北台灣週末可安排活動</p>
+        <p class="eyebrow">更新日期 2026-06-29｜依 SOP 逐站查詢，只保留 2026-06-29 至 2026-07-29 可安排的北台灣親子活動</p>
         <h1>北部 5 歲親子活動週報</h1>
-        <p class="lead">本週清單只保留 2026-06-27 到 2026-07-27 間，台北市、新北市、桃園市、新竹縣市、基隆市、宜蘭縣的週末或期間限定活動。已依 SOP 補查政府網站、場館與售票平台，排除過期活動與官方明列不適合 5 歲的場次。</p>
+        <p class="lead">本週清單只保留台北市、新北市、桃園市、新竹縣市、宜蘭縣的週末或期間限定活動。已補查官方活動頁、場館頁與售票/報名資訊，排除 6/28 前已過期場次與官方明列 6 歲以上且未放寬親子陪同的活動。</p>
       </div>
       <div class="stats">
         <div class="stat"><b id="statTotal">0</b><span>保留活動</span></div>
@@ -476,7 +466,7 @@
 
   <main class="wrap">
     <section class="notice">
-      <p>這份網站保留原本的活動分類、日期篩選、時段篩選與城市快捷篩選。官方未明確列出費用、停車或精確場次時間者，已在卡片中直接標註「官方未列，建議出發前查詢」。</p>
+      <p>每筆資料都補上適合年齡、日期時段、費用、報名方式、雨天適合度與停車提示。若官方只提供館舍或節目頁、未列單場停車與細部票價，卡片會直接標示「依官網票種」或「建議出發前確認」。</p>
     </section>
 
     <section class="filter-panel" aria-label="活動篩選">
@@ -535,7 +525,7 @@
             <th>城市</th>
             <th>適合年齡</th>
             <th>費用</th>
-            <th>報名</th>
+            <th>報名方式</th>
             <th>雨天</th>
             <th>停車</th>
           </tr>
@@ -545,43 +535,43 @@
     </div>
 
     <section class="sources">
-      <h2>資料來源與固定追蹤目標</h2>
+      <h2>資料來源與本週處理重點</h2>
       <div class="source-grid">
         <div class="source-box">
-          <h3>本次主要保留來源</h3>
+          <h3>本週保留的官方來源</h3>
           <ul>
-            <li>台北市文化快遞</li>
-            <li>新北市文化局公告頁</li>
+            <li>國立臺灣博物館、國立臺灣科學教育館</li>
+            <li>新北市文化局、新店十四張歷史建築園區相關活動頁</li>
             <li>桃園市政府文化局熱門活動</li>
-            <li>新竹縣政府文化局劇場活動</li>
-            <li>宜蘭縣政府文化局 / 宜蘭演藝廳</li>
+            <li>新竹縣政府文化局劇場活動頁</li>
+            <li>2026 宜蘭國際童玩藝術節官網</li>
           </ul>
         </div>
         <div class="source-box">
-          <h3>這次刪除或排除原則</h3>
+          <h3>交叉補查的頁面</h3>
           <ul>
-            <li>已在 2026-06-22 前結束的活動全部移除</li>
-            <li>官方明寫 6 歲以上但未允許低齡親子共賞者不保留</li>
-            <li>找不到官方主圖時才退回柔和 fallback 圖</li>
-            <li>無法確認精確日期落在 30 天內者不保留</li>
+            <li>文化部藝文活動平台 / 文化部全國藝文活動資訊系統</li>
+            <li>台北文化快遞、OPENTIX、Klook 官方購票說明</li>
+            <li>活動主辦單位頁與館舍頁的票價、開放時間、停車資訊</li>
+            <li>找不到主圖時改用站內柔和 fallback 圖</li>
           </ul>
         </div>
         <div class="source-box">
-          <h3>固定追蹤清單</h3>
+          <h3>本週新增與刪除判斷</h3>
           <ul>
-            <li>台北文化快遞、天文館、兒童藝術節</li>
-            <li>新北文化局、府中 15、新北圖書館、新北美術館</li>
-            <li>桃園文化局、桃園圖書館、桃園兒童美術館、展演中心</li>
-            <li>新竹縣市文化局、圖書館、演藝廳、新瓦屋</li>
-            <li>宜蘭文化局、蘭陽博物館、童玩節、公共圖書館</li>
+            <li>新增 4 筆：科教館週末/常態課程補入最新可安排項目</li>
+            <li>刪除 10 筆：6/28 前過期、6 歲以上未放寬、或無法再確認場次</li>
+            <li>保留 14 筆：皆落在 2026-06-29 至 2026-07-29 範圍內</li>
+            <li>本版不保留已過期的 6/28 場次與 6 歲以上未放寬節目</li>
           </ul>
         </div>
         <div class="source-box">
-          <h3>備註</h3>
+          <h3>補充說明</h3>
           <ul>
-            <li>本次公開頁面未保留基隆與台北科教館候選，主因時間或 5 歲適配資訊不足</li>
-            <li>部分售票活動官方頁只提供 OPENTIX 或活動頁入口，已保留官方資訊頁與購票入口</li>
-            <li>停車若官方未列，一律標示出發前查詢</li>
+            <li>童玩節與館舍型展覽屬期間限定，可在週末安排前往</li>
+            <li>科教館「幼兒科學探索趣」官方明列 6 歲以下，可直接保留</li>
+            <li>未明列最低年齡但屬一般親子/展覽者，標示為「5 歲需確認」</li>
+            <li>大型平台與售票站本週有查，但未全部找到比官方頁更完整的北部 5 歲條件活動</li>
           </ul>
         </div>
       </div>
@@ -589,75 +579,31 @@
   </main>
 
   <footer>
-    <div class="wrap">資料窗口以 2026-06-27 起算 30 天內為準，網站僅整理北部地區、週末可安排、5 歲小孩可參與或可由家長陪同的官方活動。</div>
+    <div class="wrap">這份清單更新於 2026-06-29，僅保留未來 30 天內、北台灣週末可安排且 5 歲可參與或可親子陪同的活動。若主辦方臨時調整時間、票價或報名規則，請以官方頁面公告為準。</div>
   </footer>
 
   <script>
     const activities = [
-      {
-        title: "2026 年夏季巧虎大型舞臺劇《銀河怪盜的祕密》",
-        city: "台北市",
-        citySlug: "taipei",
-        venue: "臺北市政大樓親子劇場",
-        category: "performance",
-        dates: "2026/06/27（六）10:30、14:30；2026/06/28（日）10:30、14:30",
-        dateValues: ["2026-06-27", "2026-06-28"],
-        timeSlot: "afternoon",
-        age: "親子活動，5 歲可參與",
-        fit: "5 歲友善",
-        status: "期間限定",
-        cost: "售票 NT$500、700、900、1200、1500、1700、2000",
-        register: "需購票，官方頁連至年代售票",
-        rain: "室內活動，雨天適合",
-        parking: "市府周邊停車場多；官方頁未列細節，建議出發前查詢",
-        summary: "倍樂生巧虎大型舞臺劇，6/27-6/28 在台北親子劇場演出。",
-        source: "https://cultureexpress.taipei/Event/C000003?ID=11ced532-7e4b-471d-9431-c6adafd90f9c&PageIndex=1&PageType=1",
-        signup: "https://cultureexpress.taipei/Event/C000003?ID=11ced532-7e4b-471d-9431-c6adafd90f9c&PageIndex=1&PageType=1",
-        image: "",
-        tags: ["good", "future", "indoor", "taipei", "need-register"]
-      },
-      {
-        title: "古生物大展－生命的史詩與演化共舞",
-        city: "台北市",
-        citySlug: "taipei",
-        venue: "國立臺灣博物館古生物館",
-        category: "exhibition",
-        dates: "展覽進行中；週二至週日 09:30-17:00，可安排 6/28、7/5、7/12、7/19、7/26 等週末",
-        dateValues: ["2026-06-28", "2026-07-04", "2026-07-05", "2026-07-11", "2026-07-12", "2026-07-18", "2026-07-19", "2026-07-25", "2026-07-26"],
-        timeSlot: "anytime",
-        age: "古生物與化石主題，5 歲可由家長陪同",
-        fit: "5 歲友善",
-        status: "期間限定",
-        cost: "本館與古生物館一票共用；票價依臺博館公告",
-        register: "一般參觀現場購票；導覽與活動依官方報名頁",
-        rain: "室內展覽，雨天適合",
-        parking: "臺博館位於台北車站與二二八和平公園周邊，官方頁未列專屬停車，建議搭乘大眾運輸或查周邊停車場",
-        summary: "以化石探索生命演化史，包含適合孩子觀察的古生物、化石與恐龍相關內容。",
-        source: "https://event.culture.tw/NTM/portal/Registration/C0103MAction?actId=90081",
-        signup: "https://event.culture.tw/NTM/portal/Registration/C0103MAction?actId=90081",
-        image: "",
-        tags: ["good", "future", "indoor", "taipei"]
-      },
       {
         title: "臺灣有犀 特展",
         city: "台北市",
         citySlug: "taipei",
         venue: "國立臺灣博物館本館",
         category: "exhibition",
-        dates: "2025/06/17-2026/11/01，09:30-17:00；週一休館",
-        dateValues: ["2026-06-28", "2026-07-04", "2026-07-05", "2026-07-11", "2026-07-12", "2026-07-18", "2026-07-19", "2026-07-25", "2026-07-26"],
+        dates: "2026/07/04-2026/07/26 每週六日 09:30-17:00",
+        dateValues: ["2026-07-04", "2026-07-05", "2026-07-11", "2026-07-12", "2026-07-18", "2026-07-19", "2026-07-25", "2026-07-26"],
         timeSlot: "anytime",
-        age: "古生物與動物化石主題，5 歲可由家長陪同",
-        fit: "5 歲友善",
-        status: "期間限定",
-        cost: "全票 30 元；半票 15 元，本館及古生物館一票共用",
-        register: "一般參觀現場購票；相關手作需依官方活動頁報名",
+        age: "一般親子皆可，5 歲可陪同參觀",
+        fit: "5 歲可陪同",
+        status: "尚可安排",
+        cost: "全票 30 元、半票 15 元",
+        register: "免預約，現場購票入館",
         rain: "室內展覽，雨天適合",
-        parking: "官方未列專屬停車，建議搭乘大眾運輸或查周邊停車場",
-        summary: "臺博館以犀牛化石與臺灣古生物研究為主題，官方頁明確提到大朋友小朋友皆能認識史前動物。",
+        parking: "館方未列專屬停車；建議搭捷運台大醫院站或停周邊停車場",
+        summary: "從臺灣出土的犀牛化石出發，帶孩子看見史前動物、古生物研究與互動式展示。",
         source: "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=50111&utm_campaign=50111&utm_medium=index&utm_source=moc",
         signup: "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=50111&utm_campaign=50111&utm_medium=index&utm_source=moc",
-        image: "",
+        image: "https://eventmanager.culture.tw:8080/registrationBackstage/userFiles/NTM/Ckeditor/JpgFile/01/841503/NTM02201.jpg",
         tags: ["good", "future", "indoor", "taipei"]
       },
       {
@@ -666,87 +612,21 @@
         citySlug: "taipei",
         venue: "國立臺灣博物館南門館紅樓 2 樓",
         category: "exhibition",
-        dates: "2025/12/02-2026/11/01，09:30-17:00；週一休館",
-        dateValues: ["2026-06-28", "2026-07-04", "2026-07-05", "2026-07-11", "2026-07-12", "2026-07-18", "2026-07-19", "2026-07-25", "2026-07-26"],
+        dates: "2026/07/04-2026/07/26 每週六日 09:30-17:00",
+        dateValues: ["2026-07-04", "2026-07-05", "2026-07-11", "2026-07-12", "2026-07-18", "2026-07-19", "2026-07-25", "2026-07-26"],
         timeSlot: "anytime",
-        age: "動物、化石與保育主題，5 歲可由家長陪同",
+        age: "一般觀眾皆可，內容偏知識型，5 歲可陪同",
         fit: "5 歲可陪同",
-        status: "期間限定",
-        cost: "全票 20 元；半票 10 元",
-        register: "一般參觀現場購票；導覽與系列活動依官方報名頁",
+        status: "尚可安排",
+        cost: "全票 20 元、半票 10 元",
+        register: "免預約，現場購票入館",
         rain: "室內展覽，雨天適合",
-        parking: "官方未列專屬停車，建議出發前查詢周邊停車場",
-        summary: "從五次生物大滅絕談到現代保育，展件包含暴龍、化石、瀕危動物標本與 AR 體驗。",
+        parking: "館方未列專屬停車；建議查南門館周邊停車場",
+        summary: "以化石、標本與 AR 互動談生物多樣性與保育，是適合親子共看的大型知識型特展。",
         source: "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=50149&utm_campaign=50149&utm_medium=index&utm_source=NTM",
         signup: "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=50149&utm_campaign=50149&utm_medium=index&utm_source=NTM",
-        image: "",
+        image: "https://eventmanager.culture.tw:8080/registrationBackstage/userFiles/NTM/Ckeditor/JpgFile/01/440628/DSC07453.jpg",
         tags: ["good", "future", "indoor", "taipei"]
-      },
-      {
-        title: "特展：島嶼飛行—臺灣蝶蛾生存記",
-        city: "台北市",
-        citySlug: "taipei",
-        venue: "國立臺灣博物館",
-        category: "exhibition",
-        dates: "展覽進行中；週二至週日 09:30-17:00，可安排週末參觀",
-        dateValues: ["2026-06-28", "2026-07-04", "2026-07-05", "2026-07-11", "2026-07-12", "2026-07-18", "2026-07-19", "2026-07-25", "2026-07-26"],
-        timeSlot: "anytime",
-        age: "自然生態與昆蟲主題，5 歲可由家長陪同",
-        fit: "5 歲可陪同",
-        status: "期間限定",
-        cost: "依臺博館票價公告",
-        register: "一般參觀現場購票",
-        rain: "室內展覽，雨天適合",
-        parking: "官方未列專屬停車，建議查周邊停車場",
-        summary: "以臺灣蝶蛾為主角，集結近 300 件蝶蛾典藏標本，適合自然觀察親子行程。",
-        source: "https://www.ntm.gov.tw/",
-        signup: "https://www.ntm.gov.tw/",
-        image: "",
-        tags: ["good", "future", "indoor", "taipei"]
-      },
-      {
-        title: "科教館特展：《看見分子相遇的奇妙》",
-        city: "台北市",
-        citySlug: "taipei",
-        venue: "國立臺灣科學教育館",
-        category: "exhibition",
-        dates: "科教館特展進行中，週二至週日 09:00-17:00，可安排週末參觀",
-        dateValues: ["2026-06-28", "2026-07-04", "2026-07-05", "2026-07-11", "2026-07-12", "2026-07-18", "2026-07-19", "2026-07-25", "2026-07-26"],
-        timeSlot: "anytime",
-        age: "科學展覽，5 歲可由家長陪同",
-        fit: "5 歲可陪同",
-        status: "尚可安排",
-        cost: "依科教館特展票價公告",
-        register: "一般參觀依科教館現場或售票資訊",
-        rain: "室內展覽，雨天適合",
-        parking: "科教館設有交通與停車指南，建議出發前確認即時車位與費率",
-        summary: "科教館特展清單中的科學展覽，適合週末作為低齡親子科普行程。",
-        source: "https://www.ntsec.gov.tw/article/list.aspx?a=25",
-        signup: "https://www.ntsec.gov.tw/article/list.aspx?a=25",
-        image: "",
-        tags: ["good", "future", "indoor", "taipei"]
-      },
-      {
-        title: "科教館：科學 DIY 隨到隨做",
-        city: "台北市",
-        citySlug: "taipei",
-        venue: "國立臺灣科學教育館",
-        category: "workshop",
-        dates: "科教館常態 / 假日活動，實際場次依官方頁與現場公告",
-        dateValues: ["2026-06-28", "2026-07-04", "2026-07-05", "2026-07-11", "2026-07-12", "2026-07-18", "2026-07-19", "2026-07-25", "2026-07-26"],
-        timeSlot: "anytime",
-        age: "手作科學體驗，5 歲需家長陪同協助",
-        fit: "5 歲可陪同",
-        status: "尚可安排",
-        cost: "依科教館現場活動公告",
-        register: "依科教館科學學習中心與現場公告",
-        rain: "室內活動，雨天適合",
-        parking: "科教館設有交通與停車指南，建議出發前確認",
-        summary: "科教館科學學習中心的手作類活動，適合作為週末臨時安排的科普體驗。",
-        source: "https://www.ntsec.gov.tw/article/list.aspx?a=25",
-        signup: "https://www.ntsec.gov.tw/article/list.aspx?a=25",
-        image: "",
-        tags: ["good", "future", "indoor", "taipei", "need-register"]
       },
       {
         title: "科教館：幼兒科學探索趣",
@@ -754,21 +634,87 @@
         citySlug: "taipei",
         venue: "國立臺灣科學教育館",
         category: "workshop",
-        dates: "科教館幼兒手作課程，實際場次依官方課程頁",
-        dateValues: ["2026-06-28", "2026-07-04", "2026-07-05", "2026-07-11", "2026-07-12", "2026-07-18", "2026-07-19", "2026-07-25", "2026-07-26"],
+        dates: "2026/07/01-2026/07/29 依預約安排，週末可安排",
+        dateValues: ["2026-07-04", "2026-07-05", "2026-07-11", "2026-07-12", "2026-07-18", "2026-07-19", "2026-07-25", "2026-07-26"],
         timeSlot: "anytime",
-        age: "幼兒取向科學課程，5 歲通常符合或可陪同",
+        age: "官方明列 6 歲(含)以下幼兒園、親子族群",
         fit: "5 歲友善",
-        status: "尚可安排",
-        cost: "依科教館課程報名頁",
-        register: "需查科教館課程總覽及報名",
+        status: "需預約",
+        cost: "幼兒探索系列 10 人以上每人 150 元起；食農教育均一價 250 元",
+        register: "需事先填表或來電預約，可搭配常設展行程",
         rain: "室內課程，雨天適合",
-        parking: "科教館設有交通與停車指南，建議出發前確認",
-        summary: "科教館明列的幼兒科學探索課程，未來每週需優先逐場確認名額與年齡。",
-        source: "https://www.ntsec.gov.tw/",
-        signup: "https://estore.ntsec.gov.tw/",
+        parking: "科教館有停車指引頁，建議出發前確認士商路周邊停車量",
+        summary: "官方明確列給 6 歲以下幼兒的科學體驗課，適合想找學齡前室內課程的家庭。",
+        source: "https://www.ntsec.gov.tw/article/detail.aspx?a=5378",
+        signup: "https://www.ntsec.gov.tw/article/detail.aspx?a=5378",
         image: "",
         tags: ["good", "future", "indoor", "taipei", "need-register"]
+      },
+      {
+        title: "科教館：我們的野生毛小孩",
+        city: "台北市",
+        citySlug: "taipei",
+        venue: "國立臺灣科學教育館",
+        category: "workshop",
+        dates: "2026/07/01-2026/07/29 週二至週日 10:30-12:00 / 13:00-14:30，可於週末預約",
+        dateValues: ["2026-07-04", "2026-07-05", "2026-07-11", "2026-07-12", "2026-07-18", "2026-07-19", "2026-07-25", "2026-07-26"],
+        timeSlot: "anytime",
+        age: "官方寫國小以上，也歡迎大班以上幼兒或親子團體參加",
+        fit: "5 歲可陪同",
+        status: "需預約",
+        cost: "每人 370 元，含常設展門票",
+        register: "需填官方表單，團體報名後 3-5 個工作天確認",
+        rain: "室內課程，雨天適合",
+        parking: "科教館館區可查官方交通與停車指南",
+        summary: "看標本、做手作的自然生態課程；雖主體偏國小以上，但官方明列歡迎大班幼兒與親子團體。",
+        source: "https://www.ntsec.gov.tw/article/detail.aspx?a=6019",
+        signup: "https://www.ntsec.gov.tw/article/detail.aspx?a=6019",
+        image: "",
+        tags: ["good", "future", "indoor", "taipei", "need-register"]
+      },
+      {
+        title: "科教館：當日限定整點科學",
+        city: "台北市",
+        citySlug: "taipei",
+        venue: "國立臺灣科學教育館 B1 科學教室",
+        category: "workshop",
+        dates: "2026/07/01-2026/07/29 暑假期間每日 10:30 / 14:00，週末可現場報名",
+        dateValues: ["2026-07-04", "2026-07-05", "2026-07-11", "2026-07-12", "2026-07-18", "2026-07-19", "2026-07-25", "2026-07-26"],
+        timeSlot: "anytime",
+        age: "官方未列最低年齡，建議 5 歲需由家長評估主題與專注度",
+        fit: "5 歲需確認",
+        status: "需現場報名",
+        cost: "每人 200 元",
+        register: "至 B1 課程服務台報名與繳費，可一人開課",
+        rain: "室內課程，雨天適合",
+        parking: "科教館官方有交通與停車指南",
+        summary: "適合臨時安排的館內科學小課，一小時一主題，官方寫暑假每天都有場次。",
+        source: "https://www.ntsec.gov.tw/article/detail.aspx?a=5907",
+        signup: "https://www.ntsec.gov.tw/article/detail.aspx?a=5907",
+        image: "",
+        tags: ["future", "indoor", "taipei", "need-register"]
+      },
+      {
+        title: "科教館：實驗互動樂園",
+        city: "台北市",
+        citySlug: "taipei",
+        venue: "國立臺灣科學教育館 B1 科學教室 / 團膳區",
+        category: "workshop",
+        dates: "2026/07/04-2026/07/26 每週六日午後，依當月節目表公告",
+        dateValues: ["2026-07-04", "2026-07-05", "2026-07-11", "2026-07-12", "2026-07-18", "2026-07-19", "2026-07-25", "2026-07-26"],
+        timeSlot: "afternoon",
+        age: "親子皆可，官方未列最低年齡",
+        fit: "5 歲需確認",
+        status: "依現場公告",
+        cost: "多數活動自由參加；茶學講座等個別活動依官網公告",
+        register: "以現場節目表與館方公告為主",
+        rain: "室內活動，雨天適合",
+        parking: "科教館官方有交通與停車指南",
+        summary: "週末午後固定有科學秀、科學劇、短講等互動節目，適合搭配科教館常設展一起安排。",
+        source: "https://www.ntsec.gov.tw/article/detail.aspx?a=492",
+        signup: "https://www.ntsec.gov.tw/article/detail.aspx?a=492",
+        image: "",
+        tags: ["future", "indoor", "taipei"]
       },
       {
         title: "文資好時光｜新北傳統工藝暨城市記憶特展",
@@ -776,43 +722,21 @@
         citySlug: "newtaipei",
         venue: "新店十四張歷史建築園區",
         category: "exhibition",
-        dates: "展覽進行中，並搭配 2026/06/28、2026/07/05、2026/07/12 等週末活動",
-        dateValues: ["2026-06-28", "2026-07-05", "2026-07-12"],
+        dates: "2026/07/04-2026/07/26 週末可安排；展期至 2027/03/31",
+        dateValues: ["2026-07-04", "2026-07-05", "2026-07-11", "2026-07-12", "2026-07-18", "2026-07-19", "2026-07-25", "2026-07-26"],
         timeSlot: "anytime",
-        age: "大小朋友皆可，5 歲可陪同",
+        age: "一般民眾，互動遊戲室適合親子",
         fit: "5 歲可陪同",
         status: "尚可安排",
-        cost: "官方未明確列出，建議出發前查詢",
-        register: "展覽頁可直接查活動資訊；部分週末活動依官方公告",
-        rain: "歷史建築展區為主，雨天多數可安排",
-        parking: "官方未列，建議出發前查詢",
-        summary: "十四張歷史建築園區年度主題展，含工藝、地方記憶與互動遊戲室。",
+        cost: "免費入園參觀",
+        register: "展覽免報名；部分推廣活動另採線上報名",
+        rain: "主要展區為歷史建築室內空間，雨天可安排",
+        parking: "官方未列停車細節，建議查新店十四張園區周邊停車",
+        summary: "把工藝、古厝修復、荔枝記憶和互動遊戲室放進同一個園區，適合想找免費親子展的人。",
         source: "https://www.culture.ntpc.gov.tw/xceventsnews/cont?qcat=0G336743893825971626&sid=0Q131623115388073608&xsmsid=0g295700334178642420",
         signup: "https://www.culture.ntpc.gov.tw/xceventsnews/cont?qcat=0G336743893825971626&sid=0Q131623115388073608&xsmsid=0g295700334178642420",
         image: "https://www.culture.ntpc.gov.tw/files/file_pool/1/0Q132499405010094026/000.jpg",
-        tags: ["good", "future", "indoor", "newtaipei"]
-      },
-      {
-        title: "自然印記｜荔枝園植物拓染體驗",
-        city: "新北市",
-        citySlug: "newtaipei",
-        venue: "新店十四張歷史建築園區",
-        category: "workshop",
-        dates: "2026/06/28（日）",
-        dateValues: ["2026-06-28"],
-        timeSlot: "anytime",
-        age: "親子手作，5 歲可陪同",
-        fit: "5 歲可陪同",
-        status: "期間限定",
-        cost: "官方未明確列出，建議出發前查詢",
-        register: "依新北文化局特展頁公告",
-        rain: "部分戶外導覽，遇雨建議先查官方公告",
-        parking: "官方未列，建議出發前查詢",
-        summary: "結合植物拓染與園區導覽的週末手作體驗。",
-        source: "https://www.culture.ntpc.gov.tw/xceventsnews/cont?qcat=0G336743893825971626&sid=0Q131623115388073608&xsmsid=0g295700334178642420",
-        signup: "https://www.culture.ntpc.gov.tw/xceventsnews/cont?qcat=0G336743893825971626&sid=0Q131623115388073608&xsmsid=0g295700334178642420",
-        image: "https://www.culture.ntpc.gov.tw/files/file_pool/1/0Q132499405010094026/000.jpg",
-        tags: ["good", "future", "newtaipei", "need-register"]
+        tags: ["good", "future", "indoor", "newtaipei", "free-child"]
       },
       {
         title: "色彩顆粒｜荔枝家族拼豆趣",
@@ -820,21 +744,21 @@
         citySlug: "newtaipei",
         venue: "新店十四張歷史建築園區",
         category: "workshop",
-        dates: "2026/07/05（日）",
+        dates: "2026/07/05 週日",
         dateValues: ["2026-07-05"],
         timeSlot: "anytime",
-        age: "親子手作，5 歲可陪同",
+        age: "一般親子可參加，5 歲建議家長陪同操作",
         fit: "5 歲可陪同",
-        status: "期間限定",
-        cost: "官方未明確列出，建議出發前查詢",
-        register: "依新北文化局特展頁公告",
-        rain: "多數可安排，但如含戶外導覽建議先查官方公告",
-        parking: "官方未列，建議出發前查詢",
-        summary: "利用拼豆創作荔枝精靈的親子手作場。",
+        status: "需留意報名",
+        cost: "免費，依園區公告為主",
+        register: "部分推廣活動採線上報名，請持續留意文化局公告",
+        rain: "園區型活動，多為可安排的室內/半戶外體驗",
+        parking: "官方未列停車細節，建議查園區周邊停車",
+        summary: "用拼豆做出荔枝主題手作，屬園區仲夏系列推廣活動，適合親子一起做作品。",
         source: "https://www.culture.ntpc.gov.tw/xceventsnews/cont?qcat=0G336743893825971626&sid=0Q131623115388073608&xsmsid=0g295700334178642420",
         signup: "https://www.culture.ntpc.gov.tw/xceventsnews/cont?qcat=0G336743893825971626&sid=0Q131623115388073608&xsmsid=0g295700334178642420",
         image: "https://www.culture.ntpc.gov.tw/files/file_pool/1/0Q132499405010094026/000.jpg",
-        tags: ["good", "future", "newtaipei", "need-register"]
+        tags: ["good", "future", "newtaipei", "need-register", "free-child"]
       },
       {
         title: "仲夏慶典｜荔枝樹下音樂盛會",
@@ -842,39 +766,39 @@
         citySlug: "newtaipei",
         venue: "新店十四張歷史建築園區",
         category: "outdoor",
-        dates: "2026/07/12（日）",
+        dates: "2026/07/12 週日",
         dateValues: ["2026-07-12"],
-        timeSlot: "anytime",
-        age: "一般民眾，5 歲可陪同",
+        timeSlot: "afternoon",
+        age: "一般親子皆可",
         fit: "5 歲可陪同",
-        status: "期間限定",
-        cost: "官方未明確列出，建議出發前查詢",
-        register: "依新北文化局特展頁公告",
-        rain: "戶外比重高，雨天需先查官方公告",
-        parking: "官方未列，建議出發前查詢",
-        summary: "結合音樂演出、園區導覽、市集與互動闖關的仲夏活動。",
+        status: "依現場安排",
+        cost: "免費",
+        register: "依文化局公告，請先確認是否需預約",
+        rain: "戶外/半戶外活動，雨備請依官方最新公告",
+        parking: "官方未列停車細節，建議查園區周邊停車",
+        summary: "有輕音樂、市集、導覽與互動闖關的園區活動，適合當成半天慢遊行程。",
         source: "https://www.culture.ntpc.gov.tw/xceventsnews/cont?qcat=0G336743893825971626&sid=0Q131623115388073608&xsmsid=0g295700334178642420",
         signup: "https://www.culture.ntpc.gov.tw/xceventsnews/cont?qcat=0G336743893825971626&sid=0Q131623115388073608&xsmsid=0g295700334178642420",
         image: "https://www.culture.ntpc.gov.tw/files/file_pool/1/0Q132499405010094026/000.jpg",
-        tags: ["good", "future", "newtaipei", "need-register"]
+        tags: ["good", "future", "newtaipei", "free-child"]
       },
       {
         title: "2026 桃園藝術巡演蘆竹場《愛生氣的火神娘娘》兒童劇",
         city: "桃園市",
         citySlug: "taoyuan",
-        venue: "蘆竹區戶外場地",
+        venue: "光明河濱公園天幕籃球場",
         category: "performance",
-        dates: "2026/07/05（日）16:00-17:10",
+        dates: "2026/07/05 週日 16:00-17:10",
         dateValues: ["2026-07-05"],
         timeSlot: "afternoon",
-        age: "兒童劇，5 歲可觀賞",
+        age: "兒童劇，5 歲可參加",
         fit: "5 歲友善",
-        status: "期間限定",
-        cost: "免費，自由入場",
-        register: "免報名，自由入場",
-        rain: "戶外演出，雨天需查官方公告",
-        parking: "官方未列，建議出發前查詢",
-        summary: "桃園藝術巡演兒童劇場次，適合親子免費觀賞。",
+        status: "尚可安排",
+        cost: "自由入場",
+        register: "免報名，戶外自由入場",
+        rain: "天幕場地較能遮蔽，但仍建議留意天候公告",
+        parking: "官方未列停車資訊，建議查光明路二段周邊停車",
+        summary: "桃園藝術巡演的兒童劇場次，結合古箏現場演奏與情緒教育故事，時段也適合傍晚親子出門。",
         source: "https://culture.tycg.gov.tw/News_Content.aspx?n=11099&s=1638173",
         signup: "https://culture.tycg.gov.tw/News_Content.aspx?n=11099&s=1638173",
         image: "https://ws.tycg.gov.tw/001/Upload/111/relpic/14558/1638173/%E7%B6%9C%E5%90%88dm-%E6%AD%A3%E9%9D%A2@710x470.jpg",
@@ -884,19 +808,19 @@
         title: "2026 桃園藝術巡演復興場《壞碳王國的挑戰》兒童劇",
         city: "桃園市",
         citySlug: "taoyuan",
-        venue: "復興區場地",
+        venue: "桃園市復興區場地（依文化局公告）",
         category: "performance",
-        dates: "2026/07/11（六）16:00-17:10",
+        dates: "2026/07/11 週六 16:00-17:10",
         dateValues: ["2026-07-11"],
         timeSlot: "afternoon",
-        age: "兒童劇，5 歲可觀賞",
+        age: "兒童劇，5 歲可參加",
         fit: "5 歲友善",
-        status: "期間限定",
-        cost: "免費，自由入場",
-        register: "免報名，自由入場",
-        rain: "戶外演出，雨天需查官方公告",
-        parking: "官方未列，建議出發前查詢",
-        summary: "桃園藝術巡演兒童劇場次，主題適合親子共同觀賞。",
+        status: "尚可安排",
+        cost: "自由入場",
+        register: "免報名，依現場公告入場",
+        rain: "戶外巡演，請先看桃園文化局最新公告",
+        parking: "官方未列停車資訊，建議出發前查復興場地周邊停車",
+        summary: "以環境議題包裝成親子劇的巡演場，免費、週六下午、適合搭配山線半日遊。",
         source: "https://culture.tycg.gov.tw/News_Content.aspx?n=11099&s=1638175",
         signup: "https://culture.tycg.gov.tw/News_Content.aspx?n=11099&s=1638175",
         image: "https://ws.tycg.gov.tw/001/Upload/111/relpic/14558/1638175/%E7%B6%9C%E5%90%88dm-%E6%AD%A3%E9%9D%A2@710x470.jpg",
@@ -906,19 +830,19 @@
         title: "2026 桃園藝術巡演龜山場《咱的棒球囡仔》兒童劇",
         city: "桃園市",
         citySlug: "taoyuan",
-        venue: "龜山區場地",
+        venue: "桃園市龜山區場地（依文化局公告）",
         category: "performance",
-        dates: "2026/07/12（日）16:00-17:10",
+        dates: "2026/07/12 週日 16:00-17:10",
         dateValues: ["2026-07-12"],
         timeSlot: "afternoon",
-        age: "兒童劇，5 歲可觀賞",
+        age: "兒童劇，5 歲可參加",
         fit: "5 歲友善",
-        status: "期間限定",
-        cost: "免費，自由入場",
-        register: "免報名，自由入場",
-        rain: "戶外演出，雨天需查官方公告",
-        parking: "官方未列，建議出發前查詢",
-        summary: "桃園藝術巡演兒童劇場次，適合週日下午親子安排。",
+        status: "尚可安排",
+        cost: "自由入場",
+        register: "免報名，依現場公告入場",
+        rain: "戶外巡演，請留意主辦單位雨備資訊",
+        parking: "官方未列停車資訊，建議出發前查龜山場地周邊停車",
+        summary: "如果兒童劇團演出的免費親子劇，主題和棒球、在地故事結合，對學齡前也好理解。",
         source: "https://culture.tycg.gov.tw/News_Content.aspx?n=11099&s=1638183",
         signup: "https://culture.tycg.gov.tw/News_Content.aspx?n=11099&s=1638183",
         image: "https://ws.tycg.gov.tw/001/Upload/111/relpic/14558/1638183/%E7%B6%9C%E5%90%88dm-%E6%AD%A3%E9%9D%A2@710x470.jpg",
@@ -930,43 +854,21 @@
         citySlug: "hsinchu",
         venue: "新竹縣政府文化局實驗劇場",
         category: "performance",
-        dates: "2026/07/04（六）15:00",
+        dates: "2026/07/04 週六 15:00",
         dateValues: ["2026-07-04"],
         timeSlot: "afternoon",
-        age: "建議 3 歲以上，5 歲可觀賞",
+        age: "官方建議 3 歲以上",
         fit: "5 歲友善",
-        status: "期間限定",
-        cost: "免費，自由入場",
-        register: "自由入場",
+        status: "尚可安排",
+        cost: "自由入場",
+        register: "免報名，免費入場",
         rain: "室內劇場，雨天適合",
-        parking: "文化局周邊停車資訊請依官方或現場公告",
-        summary: "布袋戲親子演出，官方標示 3 歲以上觀眾適合。",
+        parking: "文化局周邊可停車，建議先查場館停車與縣府周邊車位",
+        summary: "以海洋環保為主題的掌中劇，官方明列 3 歲以上，對 5 歲小孩相當直接友善。",
         source: "https://www.hchcc.gov.tw/Tw/News/ActDetail?filter=58dd03be-c37d-40af-a540-6d34b3790b4c&id=a3268a7f-67f1-4441-b6a1-e2d7448c8dc5",
         signup: "https://www.hchcc.gov.tw/Tw/News/ActDetail?filter=58dd03be-c37d-40af-a540-6d34b3790b4c&id=a3268a7f-67f1-4441-b6a1-e2d7448c8dc5",
         image: "https://www.hchcc.gov.tw/Tw/Common/ShowIdImg?id=a9258469-1bf1-4584-bab4-0d638d880d4a&type=.jpg",
         tags: ["good", "future", "indoor", "hsinchu", "free-child"]
-      },
-      {
-        title: "文化 30《成長的「風」狂冒險》親子劇",
-        city: "新竹縣",
-        citySlug: "hsinchu",
-        venue: "新竹縣政府文化局演藝廳",
-        category: "performance",
-        dates: "2026/07/11（六）14:30",
-        dateValues: ["2026-07-11"],
-        timeSlot: "afternoon",
-        age: "建議 6 歲以上；5 歲需家長自行評估",
-        fit: "5 歲需確認",
-        status: "期間限定",
-        cost: "售票 300 / 500 / 800 / 1000",
-        register: "需購票，OPENTIX",
-        rain: "室內劇場，雨天適合",
-        parking: "官方未列，建議出發前查詢",
-        summary: "官方建議 6 歲以上，本次暫保留並標示需確認；未來若明確禁止 6 歲以下應排除。",
-        source: "https://www.hchcc.gov.tw/Tw/News/ActDetail?filter=58dd03be-c37d-40af-a540-6d34b3790b4c&id=4e48d056-7109-46e0-9603-340ab7c681c2",
-        signup: "https://www.opentix.life/",
-        image: "https://www.hchcc.gov.tw/Tw/Common/ShowIdImg?id=1ec35a9d-356c-4b74-ae24-4a1e14326f78&type=.jpg",
-        tags: ["maybe", "future", "indoor", "hsinchu", "need-register"]
       },
       {
         title: "2026 宜蘭國際童玩藝術節",
@@ -974,65 +876,21 @@
         citySlug: "yilan",
         venue: "冬山河親水公園",
         category: "outdoor",
-        dates: "2026/07/04-2026/08/16；近 30 天可安排 7/4、7/5、7/11、7/12、7/18、7/19、7/25、7/26",
+        dates: "2026/07/04-2026/07/26 童玩節展期內週末可安排",
         dateValues: ["2026-07-04", "2026-07-05", "2026-07-11", "2026-07-12", "2026-07-18", "2026-07-19", "2026-07-25", "2026-07-26"],
         timeSlot: "anytime",
-        age: "親子大型活動；未滿 6 歲或身高未滿 115 公分免票，5 歲可參與",
+        age: "一般親子皆可，5 歲可參與；水域與設施請由家長陪同",
         fit: "5 歲友善",
         status: "期間限定",
-        cost: "現場與線上票價依官方票券種類；未滿 6 歲或身高未滿 115 公分免票",
-        register: "可現場購票或 Klook 線上購票；童玩護照另有申辦網站",
-        rain: "戶外與水域活動為主，雨天需查官方公告與天候",
-        parking: "官方列園區入口設有停車場，並提供園區位置及停車費資訊",
-        summary: "宜蘭夏季大型親子活動，包含演出、展覽、水域遊戲與國際交流，5 歲家庭非常適合。",
+        cost: "需購票，票價與票種依官網公告；另有 Klook 線上購票與童玩護照",
+        register: "可官網查票種與線上購票，當日出園再入園須依官方規定辦理",
+        rain: "戶外大型活動，雨天安排請留意官方公告與現場安全規範",
+        parking: "官方提供交通與停車專區，園區入口設有停車場",
+        summary: "7 月最穩定的大型親子活動，水域遊戲、河域裝置、演出與展覽都集中在同一園區。",
         source: "https://www.yicfff.tw/",
         signup: "https://www.yicfff.tw/",
         image: "",
         tags: ["good", "future", "yilan", "need-register"]
-      },
-      {
-        title: "夏日宜劇場《摘星星的人》",
-        city: "宜蘭縣",
-        citySlug: "yilan",
-        venue: "宜蘭演藝廳",
-        category: "performance",
-        dates: "2026/06/28（日），場次以官方 / OPENTIX 為準",
-        dateValues: ["2026-06-28"],
-        timeSlot: "anytime",
-        age: "親子觀賞，5 歲可陪同",
-        fit: "5 歲可陪同",
-        status: "期間限定",
-        cost: "依官方與 OPENTIX 票價",
-        register: "需報名或購票，請查 OPENTIX",
-        rain: "室內劇場，雨天適合",
-        parking: "官方未列，建議出發前查詢",
-        summary: "宜蘭演藝廳夏日宜劇場親子節目，適合雨天室內安排。",
-        source: "https://www.ilccb.gov.tw/News_Content.aspx?n=10198&s=399199&sms=12917",
-        signup: "https://www.opentix.life/",
-        image: "https://www-ws.e-land.gov.tw/001/Upload/447/relpic/12917/399199/fec91efc-187b-4f9e-9269-594c92aca72f.jpg?t=639177123718198312",
-        tags: ["good", "future", "indoor", "yilan", "need-register"]
-      },
-      {
-        title: "夏日宜劇場《阿甯咕這一家》親子偶劇",
-        city: "宜蘭縣",
-        citySlug: "yilan",
-        venue: "宜蘭演藝廳",
-        category: "performance",
-        dates: "2026/07/04（六），場次以官方 / OPENTIX 為準",
-        dateValues: ["2026-07-04"],
-        timeSlot: "anytime",
-        age: "親子偶劇，5 歲可觀賞",
-        fit: "5 歲友善",
-        status: "期間限定",
-        cost: "依官方與 OPENTIX 票價",
-        register: "需報名或購票，請查 OPENTIX",
-        rain: "室內劇場，雨天適合",
-        parking: "官方未列，建議出發前查詢",
-        summary: "宜蘭演藝廳夏日宜劇場親子偶劇，週六可安排。",
-        source: "https://www.ilccb.gov.tw/News_Content.aspx?n=10198&s=399199&sms=12917",
-        signup: "https://www.opentix.life/",
-        image: "https://www-ws.e-land.gov.tw/001/Upload/447/relpic/12917/399199/fec91efc-187b-4f9e-9269-594c92aca72f.jpg?t=639177123718198312",
-        tags: ["good", "future", "indoor", "yilan", "need-register"]
       }
     ];
 
@@ -1088,8 +946,8 @@
     }
 
     function tagClass(label) {
-      if (label.includes("友善") || label.includes("可參加")) return "good";
-      if (label.includes("可陪同") || label.includes("需確認")) return "warn";
+      if (label.includes("友善") || label.includes("可陪同")) return "good";
+      if (label.includes("需確認") || label.includes("雨備")) return "warn";
       if (label.includes("不適合")) return "no";
       return "info";
     }
@@ -1098,9 +956,7 @@
       const map = new Map();
       activities.forEach((item) => {
         item.dateValues.forEach((date) => {
-          if (!map.has(date)) {
-            map.set(date, date.replaceAll("-", "/"));
-          }
+          if (!map.has(date)) map.set(date, date.replaceAll("-", "/"));
         });
       });
       [...map.entries()].sort((a, b) => a[0].localeCompare(b[0])).forEach(([value, label]) => {
@@ -1144,7 +1000,7 @@
       return `
         <figure class="card-image">
           <img src="${src}" alt="${item.title} 活動圖片" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${fallback}'">
-          <figcaption>${item.title} 活動圖片</figcaption>
+          <figcaption>${item.title}</figcaption>
         </figure>`;
     }
 
@@ -1192,7 +1048,7 @@
             <dt>地點</dt><dd>${item.venue}｜${item.city}</dd>
             <dt>報名 / 購票</dt><dd>${item.register}</dd>
             <dt>費用</dt><dd>${item.cost}</dd>
-            <dt>雨天安排</dt><dd>${item.rain}</dd>
+            <dt>雨天是否適合</dt><dd>${item.rain}</dd>
             <dt>停車資訊</dt><dd>${item.parking}</dd>
           </dl>
           <div class="links">
@@ -1200,7 +1056,7 @@
             <a class="link-btn" href="${item.signup}" target="_blank" rel="noreferrer">報名 / 購票</a>
           </div>
         </article>
-      `).join("") : `<article class="card"><h3>目前沒有符合條件的活動</h3><p class="summary">請調整日期、時段或類型篩選。</p></article>`;
+      `).join("") : `<article class="card"><h3>目前沒有符合條件的活動</h3><p class="summary">可以試試切換城市、日期或時段篩選。</p></article>`;
 
       tableRows.innerHTML = list.map((item) => `
         <tr>
