@@ -435,9 +435,9 @@
   <header>
     <div class="wrap hero">
       <div>
-        <p class="eyebrow">更新日期 2026-07-20｜依 SOP 逐站查詢，只保留 2026-07-20 至 2026-08-19 可安排的北台灣親子活動</p>
+        <p class="eyebrow">更新日期 2026-07-28｜依 SOP 逐站查詢，只保留 2026-07-28 至 2026-08-27 可安排的北台灣親子活動</p>
         <h1>北部 5 歲親子活動週報</h1>
-        <p class="lead">本週清單只保留台北市、新北市、桃園市、新竹縣市、宜蘭縣的週末或期間限定活動。已補查官方活動頁、場館頁與售票/報名資訊，排除 2026/07/20 前已過期場次、官方頁失效活動，以及官方明列國小以上、6 歲以上且未放寬親子陪同的活動。</p>
+        <p class="lead">本週清單只保留台北市、新北市、桃園市、新竹縣市、基隆市、宜蘭縣的週末或期間限定活動。已補查官方活動頁、場館頁與售票/報名資訊，排除 2026/07/28 前已過期場次、官方頁失效活動，以及官方明列國小以上、6 歲以上且未放寬親子陪同的活動。</p>
       </div>
       <div class="stats">
         <div class="stat"><b id="statTotal">0</b><span>保留活動</span></div>
@@ -458,6 +458,7 @@
       <button class="tab" data-filter="newtaipei">新北</button>
       <button class="tab" data-filter="taoyuan">桃園</button>
       <button class="tab" data-filter="hsinchu">新竹</button>
+      <button class="tab" data-filter="keelung">基隆</button>
       <button class="tab" data-filter="yilan">宜蘭</button>
       <button class="tab" data-filter="need-register">需報名</button>
       <button class="tab" data-filter="free-child">免費</button>
@@ -540,10 +541,10 @@
         <div class="source-box">
           <h3>本週保留的官方來源</h3>
           <ul>
-            <li>國立臺灣博物館、國立臺灣科學教育館、臺北天文館、文山劇場</li>
-            <li>新北市文化局、新北市立圖書館</li>
-            <li>桃園市政府文化局、桃園市立圖書館、新竹縣政府文化局</li>
-            <li>2026 宜蘭國際童玩藝術節官網</li>
+            <li>OPENTIX 與臺北兒童藝術節相關官方節目頁、華山親子表藝節節目頁</li>
+            <li>新北市文化局、新北藝遊與主辦單位公告頁</li>
+            <li>桃園市政府文化局、桃園市兒童美術館、楊梅故事園區官方活動頁</li>
+            <li>新竹縣政府文化局、宜蘭國際童玩藝術節、傳藝中心、基隆市文化觀光局與基隆市政府頁面</li>
           </ul>
         </div>
         <div class="source-box">
@@ -551,27 +552,26 @@
           <ul>
             <li>文化部藝文活動平台 / 文化部全國藝文活動資訊系統</li>
             <li>OPENTIX、年代、寬宏、KKTIX、Accupass、BeClass、Klook、KKday、ibon、拓元售票頁</li>
-            <li>臺博館票價頁、科教館交通停車指南、童玩節票價辦法、桃園圖書館活動頁與年代售票頁</li>
-            <li>文山劇場、桃園圖書館、新北市圖、新竹縣文化局若無可直接取用主圖，改用站內 fallback 圖</li>
+            <li>活動主辦單位、場館公告、報名頁與售票頁，用來回填年齡、停車、雨備與費用資訊</li>
+            <li>官方頁主圖若無法直接載入，保留官方可用海報；其餘改用站內 fallback 圖避免壞圖</li>
           </ul>
         </div>
         <div class="source-box">
           <h3>本週新增與刪除判斷</h3>
           <ul>
-            <li>新增 5 筆：文山劇場親子玩藝、桃園《五感山徑》、中壢說故事、巧虎舞台劇、新瓦屋板凳電影院</li>
-            <li>刪除 4 筆：7/19 木雕講堂、7/18 已過期場次、資料不足的館內混合活動、僅落在舊視窗的單日活動</li>
-            <li>保留 14 筆：皆落在 2026-07-20 至 2026-08-19 的週末可安排區間</li>
-            <li>所有卡片已同步去除 7/19 以前日期，只留下本週執行日之後 30 天內的有效場次</li>
+            <li>本次保留 17 筆：皆落在 2026-07-28 至 2026-08-27 的週末可安排區間</li>
+            <li>相較上週 14 筆，淨增加 3 筆，並已重整成台北 / 新北 / 桃園 / 新竹 / 宜蘭 / 基隆六城市分布</li>
+            <li>移除所有 2026-07-28 前已過期場次，以及官方明列年齡不符 5 歲親子條件的活動</li>
+            <li>所有卡片、表格、統計與篩選已同步改成這次 30 天視窗內的有效活動</li>
           </ul>
         </div>
         <div class="source-box">
           <h3>補充說明</h3>
           <ul>
-            <li>童玩節、館舍展覽與歷史園區特展都屬期間限定，本週仍適合排入週末行程</li>
-            <li>科教館「幼兒科學探索趣」明列 6 歲以下可報名；「野生毛小孩」明列歡迎大班幼兒親子團</li>
-            <li>童玩節官網載明未滿 6 歲或 115 公分以下可免票入園，因此 5 歲可保留</li>
-            <li>新瓦屋 7/25 晚間另有 12+ 特別加映，我只保留白天與露天親子向安排</li>
-            <li>大型平台本週逐站交叉查核後，可完整驗證日期與年齡條件者仍以官方活動頁最完整</li>
+            <li>保留條件以 5 歲可參與、5 歲可陪同或 5 歲需確認為主；若官方明列國小以上或 6 歲以上且未放寬親子陪同，直接排除</li>
+            <li>童玩節、地景藝術節、傳藝十週年限定活動與兒童美術館展覽都屬期間限定，因此可列入本週末安排</li>
+            <li>基隆本次新增山海藝術節與親水季，補足北海岸週末可安排活動來源</li>
+            <li>卡片圖片優先放官方可直接載入的海報；無法穩定顯示者改用站內 fallback 圖，避免版面破圖</li>
           </ul>
         </div>
       </div>
@@ -579,318 +579,384 @@
   </main>
 
   <footer>
-    <div class="wrap">這份清單更新於 2026-07-20，僅保留 2026-07-20 至 2026-08-19 之間、北台灣週末可安排且 5 歲可參與或可親子陪同的活動。若主辦方臨時調整時間、票價或報名規則，請以官方頁面公告為準。</div>
+    <div class="wrap">這份清單更新於 2026-07-28，僅保留 2026-07-28 至 2026-08-27 之間、北台灣週末可安排且 5 歲可參與或可親子陪同的活動。若主辦方臨時調整時間、票價或報名規則，請以官方頁面公告為準。</div>
   </footer>
 
   <script>
     const activities = [
       {
-        title: "臺灣有犀 特展",
+        title: "2026臺北兒童藝術節：《小魚散步》",
         city: "台北市",
         citySlug: "taipei",
-        venue: "國立臺灣博物館本館",
-        category: "exhibition",
-        dates: "2026/07/25、07/26、08/01、08/02 09:30-17:00",
-        dateValues: ["2026-07-25", "2026-07-26", "2026-08-01", "2026-08-02"],
-        timeSlot: "anytime",
-        age: "一般親子皆可，5 歲可陪同參觀",
-        fit: "5 歲可陪同",
-        status: "尚可安排",
-        cost: "全票 30 元、半票 15 元",
-        register: "免預約，現場購票入館",
-        rain: "室內展覽，雨天適合",
-        parking: "館方未列專屬停車；建議搭捷運台大醫院站或停周邊停車場",
-        summary: "從臺灣出土的犀牛化石出發，帶孩子看見史前動物、古生物研究與互動式展示。",
-        source: "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=50111&utm_campaign=50111&utm_medium=index&utm_source=moc",
-        signup: "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=50111&utm_campaign=50111&utm_medium=index&utm_source=moc",
-        image: "https://eventmanager.culture.tw:8080/registrationBackstage/userFiles/NTM/Ckeditor/JpgFile/01/841503/NTM02201.jpg",
-        tags: ["good", "future", "indoor", "taipei"]
-      },
-      {
-        title: "特展：第六次大滅絕？命運還是機會",
-        city: "台北市",
-        citySlug: "taipei",
-        venue: "國立臺灣博物館南門館紅樓 2 樓",
-        category: "exhibition",
-        dates: "2026/07/25、07/26、08/01、08/02 09:30-17:00",
-        dateValues: ["2026-07-25", "2026-07-26", "2026-08-01", "2026-08-02"],
-        timeSlot: "anytime",
-        age: "一般觀眾皆可，內容偏知識型，5 歲可陪同",
-        fit: "5 歲可陪同",
-        status: "尚可安排",
-        cost: "全票 20 元、半票 10 元",
-        register: "免預約，現場購票入館",
-        rain: "室內展覽，雨天適合",
-        parking: "館方未列專屬停車；建議查南門館周邊停車場",
-        summary: "以化石、標本與 AR 互動談生物多樣性與保育，是適合親子共看的大型知識型特展。",
-        source: "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=50149&utm_campaign=50149&utm_medium=index&utm_source=NTM",
-        signup: "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=50149&utm_campaign=50149&utm_medium=index&utm_source=NTM",
-        image: "https://eventmanager.culture.tw:8080/registrationBackstage/userFiles/NTM/Ckeditor/JpgFile/01/440628/DSC07453.jpg",
-        tags: ["good", "future", "indoor", "taipei"]
-      },
-      {
-        title: "科教館：幼兒科學探索趣",
-        city: "台北市",
-        citySlug: "taipei",
-        venue: "國立臺灣科學教育館",
-        category: "workshop",
-        dates: "2026/07/25-2026/08/16 依預約安排，週末可安排",
-        dateValues: ["2026-07-25", "2026-07-26", "2026-08-01", "2026-08-02", "2026-08-08", "2026-08-09", "2026-08-15", "2026-08-16"],
-        timeSlot: "anytime",
-        age: "官方明列 6 歲(含)以下幼兒園、親子族群",
-        fit: "5 歲友善",
-        status: "需預約",
-        cost: "幼兒探索系列 10 人以上每人 150 元起；幼兒食農教育均一價 250 元",
-        register: "需事先填表或來電預約，可搭配常設展行程",
-        rain: "室內課程，雨天適合",
-        parking: "科教館地下停車場由士商路右側入口進入，假日汽車 40 元/小時、機車每次 20 元",
-        summary: "官方明確列給 6 歲以下幼兒與親子族群的科學體驗課，主題涵蓋石虎、青蛙、種子球與食農 DIY。",
-        source: "https://www.ntsec.gov.tw/article/detail.aspx?a=5378",
-        signup: "https://www.ntsec.gov.tw/article/detail.aspx?a=5378",
-        image: "https://www.ntsec.gov.tw/upload/Articles/5378/20260507163554367120.jpg",
-        tags: ["good", "future", "indoor", "taipei", "need-register"]
-      },
-      {
-        title: "科教館：我們的野生毛小孩",
-        city: "台北市",
-        citySlug: "taipei",
-        venue: "國立臺灣科學教育館",
-        category: "workshop",
-        dates: "2026/07/25-2026/08/16 週二至週日 10:30-12:00 / 13:00-14:30，可於週末預約",
-        dateValues: ["2026-07-25", "2026-07-26", "2026-08-01", "2026-08-02", "2026-08-08", "2026-08-09", "2026-08-15", "2026-08-16"],
-        timeSlot: "anytime",
-        age: "官方寫國小以上，也歡迎大班以上幼兒或親子團體參加",
-        fit: "5 歲可陪同",
-        status: "需預約",
-        cost: "每人 370 元，含常設展門票",
-        register: "需填官方表單，團體報名後 3-5 個工作天確認",
-        rain: "室內課程，雨天適合",
-        parking: "科教館地下停車場由士商路右側入口進入，假日汽車 40 元/小時、機車每次 20 元",
-        summary: "看標本、做手作的自然生態課程；雖主體偏國小以上，但官方明列歡迎大班幼兒與親子團體。",
-        source: "https://www.ntsec.gov.tw/article/detail.aspx?a=6019",
-        signup: "https://www.ntsec.gov.tw/article/detail.aspx?a=6019",
-        image: "https://www.ntsec.gov.tw/upload/Articles/6019/20250508090519341324.jpg",
-        tags: ["good", "future", "indoor", "taipei", "need-register"]
-      },
-      {
-        title: "臺北天文館：銀河不可思議之旅夜間導覽",
-        city: "台北市",
-        citySlug: "taipei",
-        venue: "臺北天文館一樓特展室",
-        category: "exhibition",
-        dates: "2026/07/25、08/01 每週六 18:00-18:40",
-        dateValues: ["2026-07-25", "2026-08-01"],
-        timeSlot: "evening",
-        age: "官方寫一般大眾，適合親子與學生",
-        fit: "5 歲可陪同",
-        status: "需現場登記",
-        cost: "免費",
-        register: "導覽開始前至特展室服務台現場登記，每場限額 40 人",
-        rain: "室內特展與導覽，雨天適合",
-        parking: "建議搭捷運士林站或劍潭站轉公車；開車請先查天文館交通頁與周邊停車",
-        summary: "銀河特展暑假每週六延長到晚間，晚上 6 點有專場導覽，適合晚餐前帶孩子看展。",
-        source: "https://tam.gov.taipei/News_Content.aspx?n=794B17A953424610&s=85F19BAE939B0B51&sms=9D72E82EC16F3E64",
-        signup: "https://tam.gov.taipei/News_Content.aspx?n=794B17A953424610&s=85F19BAE939B0B51&sms=9D72E82EC16F3E64",
-        image: "https://www-ws.gov.taipei/001/Upload/439/relpic/28534/9557142/7e803a3f-d9be-45ed-8211-cd93a9919299.jpg",
-        tags: ["good", "future", "indoor", "taipei", "free-child", "need-register"]
-      },
-      {
-        title: "文山劇場 2026《親子玩藝》活動系列",
-        city: "台北市",
-        citySlug: "taipei",
-        venue: "文山劇場",
-        category: "workshop",
-        dates: "2026/07/25、08/01、08/15 10:00-11:40",
-        dateValues: ["2026-07-25", "2026-08-01", "2026-08-15"],
-        timeSlot: "morning",
-        age: "官方明列 4-8 歲親子，一票兩人同行",
-        fit: "5 歲友善",
-        status: "需購票",
-        cost: "每張 200 元，一票限 1 名家長與 1 名 4-8 歲小朋友",
-        register: "需透過 OPENTIX 或超商機台購票，售完即止",
-        rain: "室內劇場教室，雨天適合",
-        parking: "景美商圈周邊停車位有限，建議搭捷運景美站 1 號出口步行前往",
-        summary: "本期剩餘可排入視窗的場次包含 7/25、8/1、8/15，內容是戲劇、美術與音樂的親子共學工作坊。",
-        source: "https://www.opentix.life/event/1986704187991719937",
-        signup: "https://www.opentix.life/event/1986704187991719937",
-        image: "",
-        tags: ["good", "future", "indoor", "taipei", "need-register"]
-      },
-      {
-        title: "文資好時光｜新北傳統工藝暨城市記憶特展",
-        city: "新北市",
-        citySlug: "newtaipei",
-        venue: "新店十四張歷史建築園區",
-        category: "exhibition",
-        dates: "2026/07/25-2026/08/16 週末可安排；展期至 2027/03/31",
-        dateValues: ["2026-07-25", "2026-07-26", "2026-08-01", "2026-08-02", "2026-08-08", "2026-08-09", "2026-08-15", "2026-08-16"],
-        timeSlot: "anytime",
-        age: "一般民眾，互動遊戲室適合親子",
-        fit: "5 歲可陪同",
-        status: "尚可安排",
-        cost: "免費入園參觀",
-        register: "展覽免報名；部分推廣活動另採線上報名",
-        rain: "主要展區為歷史建築室內空間，雨天可安排",
-        parking: "官方未列停車細節，建議查新店十四張園區周邊停車",
-        summary: "把工藝、古厝修復、荔枝記憶和互動遊戲室放進同一個園區，適合想找免費親子展的人。",
-        source: "https://www.culture.ntpc.gov.tw/xceventsnews/cont?qcat=0G336743893825971626&sid=0Q131623115388073608&xsmsid=0g295700334178642420",
-        signup: "https://www.culture.ntpc.gov.tw/xceventsnews/cont?qcat=0G336743893825971626&sid=0Q131623115388073608&xsmsid=0g295700334178642420",
-        image: "https://www.culture.ntpc.gov.tw/files/file_pool/1/0Q132499405010094026/000.jpg",
-        tags: ["good", "future", "indoor", "newtaipei", "free-child"]
-      },
-      {
-        title: "新北市圖《爸爸你可以》性平故事劇",
-        city: "新北市",
-        citySlug: "newtaipei",
-        venue: "江子翠分館 / 中和員山分館 / 總館 / 林口李科永圖書館 / 五股分館",
+        venue: "水源劇場",
         category: "performance",
-        dates: "2026/08/01、08/09 多館巡演；各場約 10:30-11:30 或 15:00-16:00",
-        dateValues: ["2026-08-01", "2026-08-09"],
-        timeSlot: "anytime",
-        age: "大小朋友皆可，5 歲可由家長陪同觀賞與互動",
-        fit: "5 歲可陪同",
-        status: "免報名",
-        cost: "免費",
-        register: "免報名、免收費；現場填問卷可領小禮物，依各館當天公告為主",
-        rain: "皆為館內空間，雨天適合",
-        parking: "各分館未統一列停車資訊，建議依分館地址查鄰近停車場或改搭大眾運輸",
-        summary: "新北市圖的巡迴親子故事劇把互動唱跳與創意手作結合進同一系列，剩餘場次都落在 30 天內。",
-        source: "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=b277bd23eb084697ac6c373b50610f54",
-        signup: "https://www.library.ntpc.gov.tw/singlehtml/ActvInfo?cntId=b277bd23eb084697ac6c373b50610f54",
-        image: "",
-        tags: ["good", "future", "indoor", "newtaipei", "free-child"]
-      },
-      {
-        title: "海王子",
-        city: "桃園市",
-        citySlug: "taoyuan",
-        venue: "桃園市政府文化局演藝廳",
-        category: "performance",
-        dates: "2026/07/25 週六 14:30、19:30",
-        dateValues: ["2026-07-25"],
-        timeSlot: "afternoon",
-        age: "親子劇，5 歲可參加；內容結合黑光劇場、舞蹈與互動淨海橋段",
-        fit: "5 歲友善",
-        status: "尚可安排",
-        cost: "一般票 600 元、學生票 400 元、親子票 700 元(1 大 1 小)、早鳥票 250 元",
-        register: "需透過 OPENTIX 購票，文化局活動頁附購票入口",
-        rain: "室內演出，雨天適合",
-        parking: "文化局頁未列停車細節，建議查桃園展演區周邊停車場或搭公車前往",
-        summary: "大小點演藝社把海洋保育做成黑光親子劇，下午與晚間各一場，下午場最適合 5 歲孩子安排。",
-        source: "https://culture.tycg.gov.tw/News_Content.aspx?n=11099&s=1627037",
-        signup: "https://culture.tycg.gov.tw/News_Content.aspx?n=11099&s=1627037",
-        image: "https://culture.tycg.gov.tw/001/Upload/111/relpic/14558/1627037/5ba0fb64-1ac2-4705-aa4a-282cb5058d8e.jpg",
-        tags: ["good", "future", "taoyuan", "need-register"]
-      },
-      {
-        title: "《五感山徑》打開感官，走進臺灣的森林世界",
-        city: "桃園市",
-        citySlug: "taoyuan",
-        venue: "桃園市立圖書館總館 1 樓享讀拾光區、3 樓兒藝展示區",
-        category: "exhibition",
-        dates: "2026/07/20-2026/08/19 週二至週六 08:30-21:00、週日週一 08:30-17:00",
-        dateValues: ["2026-07-25", "2026-07-26", "2026-08-01", "2026-08-02", "2026-08-08", "2026-08-09", "2026-08-15", "2026-08-16"],
-        timeSlot: "anytime",
-        age: "一般親子皆可，5 歲可陪同看展與參與森林主題體驗",
-        fit: "5 歲可陪同",
-        status: "免費入場",
-        cost: "免費",
-        register: "展覽免報名；頁面另附親子市集、說故事、工作坊與電影放映連結可分開報名",
-        rain: "室內展區，雨天適合",
-        parking: "總館周邊有付費停車場，假日建議先查南平路周邊車位",
-        summary: "桃園市圖總館暑期親子主題展，以森林五感為主軸，並串連市集、繪本劇場、工作坊與說故事活動。",
-        source: "https://www.typl.gov.tw/kids/Activity/Content/9716",
-        signup: "https://www.typl.gov.tw/kids/Activity/Content/9716",
-        image: "",
-        tags: ["good", "future", "indoor", "taoyuan", "free-child"]
-      },
-      {
-        title: "中壢分館、龍岡分館、自強分館兒童說故事活動",
-        city: "桃園市",
-        citySlug: "taoyuan",
-        venue: "中壢分館 / 龍岡分館 / 自強分館兒童室",
-        category: "workshop",
-        dates: "2026/07/25、08/01、08/08、08/15 每場 14:00-15:00",
-        dateValues: ["2026-07-25", "2026-08-01", "2026-08-08", "2026-08-15"],
-        timeSlot: "afternoon",
-        age: "官方標示親子、幼兒",
-        fit: "5 歲友善",
-        status: "免費參加",
-        cost: "免費",
-        register: "依分館現場活動參加，官方頁未列另行報名機制",
-        rain: "圖書館兒童室活動，雨天適合",
-        parking: "各分館停車條件不同，建議依分館地址查附近停車場或搭乘大眾運輸",
-        summary: "7 到 8 月每週末輪流在中壢、龍岡、自強分館辦理說故事，題材包含酢漿草、阿米怕爆爆與子兒吐吐。",
-        source: "https://www.typl.gov.tw/zh-tw/Activity/Content/9833",
-        signup: "https://www.typl.gov.tw/zh-tw/Activity/Content/9833",
-        image: "",
-        tags: ["good", "future", "indoor", "taoyuan", "free-child"]
-      },
-      {
-        title: "2026 新瓦屋板凳電影院 × 台灣國際兒童影展",
-        city: "新竹縣",
-        citySlug: "hsinchu",
-        venue: "新瓦屋集會堂 / 禾埕廣場",
-        category: "outdoor",
-        dates: "2026/07/25 室內放映與戶外市集；白天親子場為主",
-        dateValues: ["2026-07-25"],
-        timeSlot: "anytime",
-        age: "一般親子皆可；7/25 18:30 室內特別加映場標示 12+，建議 5 歲家庭以前段親子向場次為主",
-        fit: "5 歲可陪同",
-        status: "部分場次需報名",
-        cost: "官方頁未列票價，室內場需線上報名，露天活動依現場公告參加",
-        register: "室內場需事先線上報名，開演前 10 分鐘開放現場候位；7/25 露天場與市集可直接到場",
-        rain: "室內放映雨天適合；露天場請留意新竹縣文化局最新公告",
-        parking: "官方文案提到新瓦屋停車場入口設有活動區，建議出發前先查園區停車動線",
-        summary: "這檔兒影展把兒童影展、行動書車、市集與舞台秀放進同一天程，7/25 適合鎖定白天親子場與露天活動。",
-        source: "https://www.hchcc.gov.tw/Tw/News/ActPreviewDetail?filter=e2ce565c-7042-466e-9b77-bb81937b8cf9&id=73ab96f3-9a62-4711-8c8b-c4a232a4b558",
-        signup: "https://www.hchcc.gov.tw/Tw/News/ActPreviewDetail?filter=e2ce565c-7042-466e-9b77-bb81937b8cf9&id=73ab96f3-9a62-4711-8c8b-c4a232a4b558",
-        image: "",
-        tags: ["good", "future", "hsinchu", "need-register", "free-child"]
-      },
-      {
-        title: "2026 年夏季巧虎大型舞臺劇《銀河怪盜的祕密》",
-        city: "新竹縣",
-        citySlug: "hsinchu",
-        venue: "新竹縣政府文化局演藝廳",
-        category: "performance",
-        dates: "2026/08/01、08/02 10:30 / 14:30",
+        dates: "2026/08/01（六）-2026/08/02（日）｜演出場次依 OPENTIX 售票頁",
         dateValues: ["2026-08-01", "2026-08-02"],
-        timeSlot: "anytime",
-        age: "親子舞台劇，5 歲可參與",
-        fit: "5 歲友善",
+        timeSlot: "afternoon",
+        age: "建議年齡 5 歲以上",
+        fit: "5 歲可參與",
         status: "需購票",
-        cost: "票價 500 / 700 / 900 / 1200 / 1500 / 1700 / 2000 元",
-        register: "需透過年代售票購票；各場有少量座墊可借用",
-        rain: "室內演藝廳，雨天適合",
-        parking: "文化局園區停車位有限，建議提早抵達或查竹北周邊停車場",
-        summary: "巧虎暑期大型舞台劇 8 月初到新竹縣巡演，上午與下午各一場，是窗口內最明確的低齡親子售票節目之一。",
-        source: "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P192ILGJ",
-        signup: "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P192ILGJ",
-        image: "",
-        tags: ["good", "future", "indoor", "hsinchu", "need-register"]
+        cost: "票價以 OPENTIX 當前售票頁為準",
+        register: "OPENTIX 線上購票",
+        rain: "室內劇場，雨天適合",
+        parking: "水源劇場周邊以收費停車場與路邊停車格為主，假日建議捷運公館站步行前往",
+        summary: "改編自陳致元繪本，走日常街區與光影想像路線，年齡標示明確，適合 5 歲以上親子入門看戲。",
+        source: "https://www.opentix.life/event/2043955237061541888",
+        signup: "https://www.opentix.life/event/2043955237061541888",
+        image: "https://s3.resource.opentix.life/upload/program/1776323673275LLccapoDFm.jpeg",
+        tags: ["good", "future", "indoor", "taipei", "need-register"]
       },
       {
-        title: "2026 宜蘭國際童玩藝術節",
+        title: "台塑石油《艾拉・費茲潔拉女士，您好！》親子說故事",
+        city: "台北市",
+        citySlug: "taipei",
+        venue: "國家兩廳院表演藝術圖書館",
+        category: "performance",
+        dates: "2026/08/01（六）-2026/08/02（日）｜11:30、10:00 等場次依售票頁",
+        dateValues: ["2026-08-01", "2026-08-02"],
+        timeSlot: "morning",
+        age: "建議年齡 4-7 歲",
+        fit: "5 歲可參與",
+        status: "需購票",
+        cost: "票價 350 元",
+        register: "OPENTIX 線上購票",
+        rain: "室內活動，雨天適合",
+        parking: "兩廳院地下停車場與中正紀念堂周邊停車場可用，假日建議搭捷運",
+        summary: "結合故事、爵士與親子互動的低齡節目，官方年齡區間直接涵蓋 5 歲。",
+        source: "https://www.opentix.life/event/2054532706641764352",
+        signup: "https://www.opentix.life/event/2054532706641764352",
+        image: "https://s3.resource.opentix.life/upload/program/1780038932847K2HxVJDkYn.jpeg",
+        tags: ["good", "future", "indoor", "taipei", "need-register"]
+      },
+      {
+        title: "2026兒童戲曲藝術節：浩明創意工作室《今天的營業時間即將結束》",
+        city: "台北市",
+        citySlug: "taipei",
+        venue: "臺灣戲曲中心小表演廳",
+        category: "performance",
+        dates: "2026/08/01（六）-2026/08/02（日）｜場次依 OPENTIX 售票頁",
+        dateValues: ["2026-08-01", "2026-08-02"],
+        timeSlot: "afternoon",
+        age: "建議年齡 5 歲以上",
+        fit: "5 歲可參與",
+        status: "需購票",
+        cost: "票價以 OPENTIX 當前售票頁為準",
+        register: "OPENTIX 線上購票",
+        rain: "室內劇場，雨天適合",
+        parking: "臺灣戲曲中心附設停車場，或利用芝山、士林一帶停車場後步行",
+        summary: "把歌仔戲博物館傳說做成親子劇場，年齡線清楚，適合想帶孩子看傳統戲曲新編。",
+        source: "https://www.opentix.life/event/2031555958519660544",
+        signup: "https://www.opentix.life/event/2031555958519660544",
+        image: "https://s3.resource.opentix.life/upload/program/1773195558965dWiJvDWAAj.jpeg",
+        tags: ["good", "future", "indoor", "taipei", "need-register"]
+      },
+      {
+        title: "2026華山親子表藝節《擁抱海洋永續親子音樂會》",
+        city: "台北市",
+        citySlug: "taipei",
+        venue: "華山1914文創園區 烏梅劇院",
+        category: "performance",
+        dates: "2026/08/08（六）-2026/08/09（日）｜10:30 起，依 OPENTIX 售票頁",
+        dateValues: ["2026-08-08", "2026-08-09"],
+        timeSlot: "morning",
+        age: "建議年齡 3 歲以上",
+        fit: "5 歲可參與",
+        status: "需購票",
+        cost: "票價 500 元",
+        register: "OPENTIX 線上購票",
+        rain: "室內劇場，雨天適合",
+        parking: "華山園區周邊收費停車場有限，假日較滿，建議善用捷運忠孝新生站",
+        summary: "以永續與海洋主題包裝成親子打擊樂演出，3 歲以上即可，5 歲觀眾可直接安排。",
+        source: "https://www.opentix.life/event/2045080592636637185",
+        signup: "https://www.opentix.life/event/2045080592636637185",
+        image: "https://s3.resource.opentix.life/upload/program/17774461943197CqviljyX6.jpeg",
+        tags: ["good", "future", "indoor", "taipei", "need-register"]
+      },
+      {
+        title: "《小小音樂大師課》孩子們的夏季交響樂・臺北",
+        city: "台北市",
+        citySlug: "taipei",
+        venue: "1980室內樂集",
+        category: "performance",
+        dates: "2026/08/15（六）、08/16（日）、08/22（六）、08/23（日）｜實際時段依 OPENTIX 售票頁",
+        dateValues: ["2026-08-15", "2026-08-16", "2026-08-22", "2026-08-23"],
+        timeSlot: "afternoon",
+        age: "建議年齡 1-6 歲，須 1 位成年陪同",
+        fit: "5 歲可參與",
+        status: "需購票",
+        cost: "票價 375、675 元",
+        register: "OPENTIX 線上購票",
+        rain: "室內演出，雨天適合",
+        parking: "北平東路周邊停車位有限，建議搭捷運善導寺站或台北車站步行",
+        summary: "低齡音樂互動節目，官方年齡直接涵蓋學齡前，對 5 歲親子相對穩定。",
+        source: "https://www.opentix.life/event/2047126673158291457",
+        signup: "https://www.opentix.life/event/2047126673158291457",
+        image: "",
+        tags: ["good", "future", "indoor", "taipei", "need-register"]
+      },
+      {
+        title: "2026華山親子表藝節《星空下的魔笛》",
+        city: "台北市",
+        citySlug: "taipei",
+        venue: "華山1914文創園區 烏梅劇院",
+        category: "performance",
+        dates: "2026/08/22（六）-2026/08/23（日）｜11:00、14:30、17:00/19:30 依場次",
+        dateValues: ["2026-08-22", "2026-08-23"],
+        timeSlot: "afternoon",
+        age: "建議年齡 3 歲以上，12 歲以下須成年陪同",
+        fit: "5 歲可參與",
+        status: "需購票",
+        cost: "票價 600、1,100 元",
+        register: "OPENTIX 線上購票",
+        rain: "室內劇場，雨天適合",
+        parking: "華山園區周邊停車場假日較易客滿，建議捷運前往",
+        summary: "屬華山親子表藝節後段熱門節目，年齡門檻友善，適合安排成完整半日藝文行程。",
+        source: "https://www.opentix.life/event/2045087631395606529",
+        signup: "https://www.opentix.life/event/2045087631395606529",
+        image: "",
+        tags: ["good", "future", "indoor", "taipei", "need-register"]
+      },
+      {
+        title: "新北市生音藝術節─豬探長小劇場《馬戲團謎奇事件》",
+        city: "新北市",
+        citySlug: "newtaipei",
+        venue: "新北市藝文中心演藝廳",
+        category: "performance",
+        dates: "2026/08/22（六）10:30、14:30",
+        dateValues: ["2026-08-22"],
+        timeSlot: "afternoon",
+        age: "普遍級",
+        fit: "5 歲可參與",
+        status: "需購票",
+        cost: "票價 500、1,000、1,600、2,000 元",
+        register: "OPENTIX 線上購票",
+        rain: "室內演出，雨天適合",
+        parking: "新北市藝文中心地下停車場與周邊板橋收費停車場可用",
+        summary: "如果兒童劇團的豬探長系列，場次集中、年齡限制寬鬆，適合 8/22 安排新北看戲。",
+        source: "https://www.opentix.life/event/2059206383905304577",
+        signup: "https://www.opentix.life/event/2059206383905304577",
+        image: "",
+        tags: ["good", "future", "indoor", "newtaipei", "need-register"]
+      },
+      {
+        title: "桃園市兒童美術館《一樣不一樣》",
+        city: "桃園市",
+        citySlug: "taoyuan",
+        venue: "桃園市兒童美術館",
+        category: "exhibition",
+        dates: "2026/08/01（六）、08/02（日）、08/08（六）、08/09（日）、08/15（六）、08/16（日）、08/22（六）、08/23（日）｜週末 09:30-17:00；定時導覽 11:00、15:00；08/01 14:00 有繪本說故事",
+        dateValues: ["2026-08-01", "2026-08-02", "2026-08-08", "2026-08-09", "2026-08-15", "2026-08-16", "2026-08-22", "2026-08-23"],
+        timeSlot: "anytime",
+        age: "一般親子大眾；繪本說故事與週末導覽均適合學齡前親子",
+        fit: "5 歲可陪同",
+        status: "週末可安排",
+        cost: "展覽票價依館方公告；定時導覽與 08/01 繪本說故事以館方公告為準",
+        register: "定時導覽現場參加；其餘依館方公告",
+        rain: "室內美術館，雨天適合",
+        parking: "青埔一帶以館舍周邊收費停車場為主，假日建議提早抵達",
+        summary: "展覽本身橫跨整個暑假，週末有固定導覽，8/1 另有親子繪本說故事，屬穩定可安排的室內藝文選項。",
+        source: "https://culture.tycg.gov.tw/News_Content.aspx?n=11103&s=1725745",
+        signup: "https://culture.tycg.gov.tw/News_Content.aspx?n=11103&s=1725745",
+        image: "",
+        tags: ["future", "indoor", "taoyuan"]
+      },
+      {
+        title: "楊梅故事園區 梅好親子森活日",
+        city: "桃園市",
+        citySlug: "taoyuan",
+        venue: "楊梅故事園區",
+        category: "outdoor",
+        dates: "2026/08/08（六）10:00-18:00｜親子生態探索 10:00-11:30、滑步車追風營 13:30-15:00、免費親子電影院與市集全天",
+        dateValues: ["2026-08-08"],
+        timeSlot: "anytime",
+        age: "親子課程建議 5 歲以上；滑步車追風營限 5-8 歲且須家長陪同",
+        fit: "5 歲可參與",
+        status: "期間限定",
+        cost: "收費課程每堂 300 元；1 大 1 小雙課 500 元；親子電影院、市集與餐車免費參加",
+        register: "課程依園區 Facebook 公告報名，免費區可現場參加",
+        rain: "戶外活動為主，遇雨需留意園區公告；免費電影院與部分區域較能彈性調整",
+        parking: "園區周邊以路邊與鄰近停車空間為主，假日建議提早到場",
+        summary: "同一天可組合課程、電影、市集與餐車，官方明寫親子課程建議 5 歲以上，是這次桃園最精準的 5 歲向活動之一。",
+        source: "https://culture.tycg.gov.tw/News_Content.aspx?n=11103&s=1717959&sms=14561",
+        signup: "https://culture.tycg.gov.tw/News_Content.aspx?n=11103&s=1717959&sms=14561",
+        image: "",
+        tags: ["good", "future", "taoyuan"]
+      },
+      {
+        title: "2026桃園地景藝術節",
+        city: "桃園市",
+        citySlug: "taoyuan",
+        venue: "桃園珍珠海岸線（竹圍漁港至新屋漂流木公園）",
+        category: "outdoor",
+        dates: "2026/08/01（六）-2026/08/23（日）各週末可安排｜展期至 08/30，但本清單僅保留 08/23 前週末",
+        dateValues: ["2026-08-01", "2026-08-02", "2026-08-08", "2026-08-09", "2026-08-15", "2026-08-16", "2026-08-22", "2026-08-23"],
+        timeSlot: "anytime",
+        age: "一般親子大眾；海岸步行與戶外觀展請由家長評估體力與日曬",
+        fit: "5 歲可陪同",
+        status: "期間限定",
+        cost: "免費參觀",
+        register: "自由參觀；個別延伸活動依主辦單位公告",
+        rain: "戶外展區為主，雨天與強風下體驗會受影響",
+        parking: "各展區停車條件差異大，竹圍漁港、永安漁港周邊較好停，其餘點位建議先看官方導覽資訊",
+        summary: "想排海邊放風與藝術裝置的家庭可優先考慮，戶外面積大，但要自行控時與防曬。",
+        source: "https://culture.tycg.gov.tw/News_Content.aspx?n=11103&s=1700149&sms=14561",
+        signup: "https://culture.tycg.gov.tw/News_Content.aspx?n=11103&s=1700149&sms=14561",
+        image: "",
+        tags: ["future", "taoyuan", "free-child"]
+      },
+      {
+        title: "親子情緒急診室",
+        city: "新竹縣",
+        citySlug: "hsinchu",
+        venue: "故事城堡",
+        category: "workshop",
+        dates: "2026/08/01（六）10:00-11:30",
+        dateValues: ["2026-08-01"],
+        timeSlot: "morning",
+        age: "3-6 歲親子（2019-2023 年出生）",
+        fit: "5 歲可參與",
+        status: "需報名",
+        cost: "免費",
+        register: "新竹縣政府文化局藝文活動資訊網線上報名",
+        rain: "室內活動，雨天適合",
+        parking: "依故事城堡與周邊停車空間為主，建議提早到場報到",
+        summary: "官方直接標示 3-6 歲親子，是這次新竹最明確符合 5 歲條件的活動。",
+        source: "https://event.hchcc.gov.tw/index.php?did=339&inter=apply",
+        signup: "https://event.hchcc.gov.tw/index.php?did=339&inter=apply",
+        image: "",
+        tags: ["good", "future", "indoor", "hsinchu", "need-register", "free-child"]
+      },
+      {
+        title: "親子 DIY 課程《掌心DIY - 多肉小灶台》",
+        city: "新竹縣",
+        citySlug: "hsinchu",
+        venue: "新瓦屋客家文化保存區 研習教室",
+        category: "workshop",
+        dates: "2026/08/01（六）14:30-16:00",
+        dateValues: ["2026-08-01"],
+        timeSlot: "afternoon",
+        age: "親子家庭；官方建議參與孩童年齡為 6 歲，需家長全程陪同",
+        fit: "5 歲需確認",
+        status: "需報名",
+        cost: "免費",
+        register: "文化局活動網線上報名，現場可申辦會員後參加",
+        rain: "室內手作，雨天適合",
+        parking: "新瓦屋周邊有收費停車場與路邊車格，假日仍建議提早到",
+        summary: "屬低門檻親子手作，但官方把建議年齡寫成 6 歲，5 歲家庭若有興趣建議先向主辦確認。",
+        source: "https://event.hchcc.gov.tw/index.php?did=356&inter=apply",
+        signup: "https://event.hchcc.gov.tw/index.php?did=356&inter=apply",
+        image: "",
+        tags: ["future", "indoor", "hsinchu", "need-register", "free-child"]
+      },
+      {
+        title: "2026親子小戲節《跟著愛麗絲一起PLAY》",
+        city: "新竹縣",
+        citySlug: "hsinchu",
+        venue: "新竹縣政府文化局園區",
+        category: "performance",
+        dates: "2026/08/08（六）-2026/08/09（日）｜11:00-16:50，沉浸式戲劇與互動闖關",
+        dateValues: ["2026-08-08", "2026-08-09"],
+        timeSlot: "anytime",
+        age: "親子活動，官方未列最低年齡",
+        fit: "5 歲可陪同",
+        status: "需報名",
+        cost: "免費",
+        register: "新竹縣政府文化局藝文活動資訊網線上報名",
+        rain: "活動在文化局園區辦理，遇雨請留意主辦公告",
+        parking: "文化局園區停車位與周邊停車空間有限，建議提早抵達",
+        summary: "以互動闖關與沉浸式戲劇為主，官方雖未列最低年齡，但屬典型親子節慶，可列入 5 歲陪同場。",
+        source: "https://event.hchcc.gov.tw/index.php",
+        signup: "https://event.hchcc.gov.tw/index.php",
+        image: "",
+        tags: ["future", "hsinchu", "need-register", "free-child"]
+      },
+      {
+        title: "2026宜蘭國際童玩藝術節",
         city: "宜蘭縣",
         citySlug: "yilan",
         venue: "冬山河親水公園",
         category: "outdoor",
-        dates: "2026/07/25-2026/08/16 童玩節展期內週末可安排",
-        dateValues: ["2026-07-25", "2026-07-26", "2026-08-01", "2026-08-02", "2026-08-08", "2026-08-09", "2026-08-15", "2026-08-16"],
+        dates: "2026/08/01（六）-2026/08/16（日）各週末與暑期日間｜活動期間 09:00-21:00",
+        dateValues: ["2026-08-01", "2026-08-02", "2026-08-08", "2026-08-09", "2026-08-15", "2026-08-16"],
         timeSlot: "anytime",
-        age: "一般親子皆可；官網寫未滿 6 歲或 115 公分以下可免票入園，水域與設施需由家長陪同",
-        fit: "5 歲友善",
+        age: "一般親子大眾；部分水域與設施仍須依身高或現場安全規定使用",
+        fit: "5 歲可參與",
         status: "期間限定",
-        cost: "需購票；活動期假日個人券 350 元、優待券 300 元、兒童券 200 元，另有 Klook 與童玩護照",
-        register: "可官網查票種與線上購票，當日出園再入園須依官方規定辦理",
-        rain: "戶外大型活動，雨天安排請留意官方公告與現場安全規範",
-        parking: "官方提供交通與停車專區，園區入口設有停車場",
-        summary: "7 月到 8 月初最穩定的大型親子活動，水域遊戲、演出、裝置與各國團隊表演都集中在同一園區。",
-        source: "https://www.yicfff.tw/",
-        signup: "https://www.yicfff.tw/",
-        image: "https://www.yicfff.tw/2999/uploads/images/20260510230738_6a009f3aa544f.jpg",
+        cost: "活動期間平日 250 元、假日 350 元；Klook 與套票方案依官方公告",
+        register: "可官網查票、現場購票，或透過指定通路購買",
+        rain: "下雨天園區仍可能開放，但雷雨、豪雨或強風時水域與高空設施會關閉",
+        parking: "冬山河親水公園周邊有收費停車場，暑假週末建議提早到場",
+        summary: "北部暑假最穩定的大型親子活動之一，水域、演出與市集量體都足，但務必注意天候與換洗準備。",
+        source: "https://yicfff.tw/news_detail.php?uuid=1bb2adf0-4460-11f1-9c41-00505688b622",
+        signup: "https://yicfff.tw/faq.php",
+        image: "",
         tags: ["good", "future", "yilan", "need-register"]
+      },
+      {
+        title: "宜蘭傳藝園區 十週年限定「2026 YA傳藝」",
+        city: "宜蘭縣",
+        citySlug: "yilan",
+        venue: "國立傳統藝術中心 宜蘭傳藝園區",
+        category: "outdoor",
+        dates: "2026/08/01（六）-2026/08/02（日）、08/08（六）-08/09（日）09:00-20:30",
+        dateValues: ["2026-08-01", "2026-08-02", "2026-08-08", "2026-08-09"],
+        timeSlot: "anytime",
+        age: "一般親子大眾",
+        fit: "5 歲可陪同",
+        status: "期間限定",
+        cost: "入園門票每人 150 元",
+        register: "購買園區門票入場",
+        rain: "戶外與半戶外活動混合，雨天仍可逛，但踩街與夜間活動會受影響",
+        parking: "園區停車場可停車，暑假週末建議提早進場",
+        summary: "把踩街、夜光裝置、台味市集與夜間演出集合在一起，適合想在宜蘭排到晚上的家庭。",
+        source: "https://families.lym.gov.tw/ch/news/event-query/TSILanActivity-000496/",
+        signup: "https://families.lym.gov.tw/ch/news/event-query/TSILanActivity-000496/",
+        image: "",
+        tags: ["future", "yilan", "need-register"]
+      },
+      {
+        title: "2026基隆山海藝術節「孩在飛翔」",
+        city: "基隆市",
+        citySlug: "keelung",
+        venue: "國門廣場、要塞司令部、七堵鐵道紀念公園",
+        category: "performance",
+        dates: "2026/08/01（六）、08/02（日）、08/08（六）、08/15（六）15:30-20:30 左右，依各場公告",
+        dateValues: ["2026-08-01", "2026-08-02", "2026-08-08", "2026-08-15"],
+        timeSlot: "afternoon",
+        age: "一般親子大眾",
+        fit: "5 歲可陪同",
+        status: "期間限定",
+        cost: "免費入場",
+        register: "自由參加",
+        rain: "戶外藝術節，雨天需留意現場與主辦公告",
+        parking: "各場地停車條件不同，國門廣場與七堵場建議搭火車或公車前往",
+        summary: "結合馬戲、兒童劇、手作、市集與互動體驗，基隆這一檔最符合親子藝文週末需求。",
+        source: "https://klctb.klcg.gov.tw/News_Content.aspx?n=7640&s=18111",
+        signup: "https://klctb.klcg.gov.tw/News_Content.aspx?n=7640&s=18111",
+        image: "",
+        tags: ["future", "keelung", "free-child"]
+      },
+      {
+        title: "2026基隆親水季「暖暖親水2.0」",
+        city: "基隆市",
+        citySlug: "keelung",
+        venue: "暖暖親水公園",
+        category: "outdoor",
+        dates: "2026/08/01（六）-2026/08/23（日）各週末可安排｜每日 09:30-11:00、16:00-17:30；每週一、五清潔換水不開放",
+        dateValues: ["2026-08-01", "2026-08-02", "2026-08-08", "2026-08-09", "2026-08-15", "2026-08-16", "2026-08-22", "2026-08-23"],
+        timeSlot: "anytime",
+        age: "一般親子大眾",
+        fit: "5 歲可參與",
+        status: "暑期限定",
+        cost: "免費",
+        register: "自由參加",
+        rain: "戲水為主，豪雨或天候不佳時請先看暖暖區公所公告",
+        parking: "可停水源路水源橋下收費停車場，再步行入園；也可搭台鐵至暖暖站或利用公車",
+        summary: "若目標是低預算放電，這檔比純展演更實用；適合搭配基隆半日走跳，但要自備換洗與防滑用品。",
+        source: "https://www.klcg.gov.tw/tw/klcg1/3168-318643.html",
+        signup: "https://www.klcg.gov.tw/tw/klcg1/3168-318643.html",
+        image: "",
+        tags: ["good", "future", "keelung", "free-child"]
       }
     ];
 
@@ -918,6 +984,7 @@
     const statGood = document.querySelector("#statGood");
     const statFree = document.querySelector("#statFree");
     const statCities = document.querySelector("#statCities");
+    const reportAnchorDate = new Date("2026-07-28T00:00:00+08:00");
 
     let selectedDateWindow = null;
 
@@ -968,7 +1035,7 @@
     }
 
     function nextWeekend(offsetWeeks = 0) {
-      const today = new Date();
+      const today = new Date(reportAnchorDate);
       const day = today.getDay();
       const distanceToSaturday = (6 - day + 7) % 7 || 7;
       const saturday = new Date(today);
@@ -1118,3 +1185,4 @@
   </script>
 </body>
 </html>
+
