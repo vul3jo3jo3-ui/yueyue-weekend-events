@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7e6c6"/>
+      <stop offset="100%" stop-color="#ddb172"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="915" cy="165" r="100" fill="#fff7ea" fill-opacity=".5"/>
+  <circle cx="230" cy="525" r="128" fill="#ad6a36" fill-opacity=".12"/>
+  <g fill="#563a20" font-family="'Noto Sans TC', 'Microsoft JhengHei', sans-serif">
+    <text x="94" y="154" font-size="36">Hsinchu County Story Castle</text>
+    <text x="94" y="252" font-size="62" font-weight="700">翹鬍子的麵包大冒險</text>
+    <text x="94" y="332" font-size="40">音樂互動劇場</text>
+    <text x="94" y="408" font-size="30">2-5 歲親子｜9/13 10:00-11:00</text>
+  </g>
+</svg>

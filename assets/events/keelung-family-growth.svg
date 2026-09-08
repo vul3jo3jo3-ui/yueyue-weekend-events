@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e7f2d8"/>
+      <stop offset="100%" stop-color="#b7cf8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <ellipse cx="936" cy="160" rx="170" ry="108" fill="#ffffff" fill-opacity=".42"/>
+  <ellipse cx="240" cy="520" rx="185" ry="118" fill="#6f9558" fill-opacity=".14"/>
+  <g fill="#37533a" font-family="'Noto Sans TC', 'Microsoft JhengHei', sans-serif">
+    <text x="94" y="154" font-size="34">Keelung Family Activity</text>
+    <text x="94" y="248" font-size="62" font-weight="700">親子成長選物站</text>
+    <text x="94" y="326" font-size="42">歡樂動一動</text>
+    <text x="94" y="404" font-size="30">3-6 歲親子｜9/12 10:00-12:00｜免費</text>
+  </g>
+</svg>

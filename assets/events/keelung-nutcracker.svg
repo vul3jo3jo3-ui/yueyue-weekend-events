@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d7e5ef"/>
+      <stop offset="100%" stop-color="#8ab1c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="940" cy="150" r="110" fill="#ffffff" fill-opacity=".4"/>
+  <circle cx="250" cy="526" r="140" fill="#4a6f86" fill-opacity=".14"/>
+  <g fill="#29495d" font-family="'Noto Sans TC', 'Microsoft JhengHei', sans-serif">
+    <text x="96" y="154" font-size="34">Keelung Performing Arts Center</text>
+    <text x="96" y="252" font-size="64" font-weight="700">故事音樂會《胡桃鉗》</text>
+    <text x="96" y="332" font-size="40">打擊樂 × 說故事</text>
+    <text x="96" y="410" font-size="30">9/26 14:30｜學齡前可親子共賞</text>
+  </g>
+</svg>

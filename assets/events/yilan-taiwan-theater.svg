@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ede6dc"/>
+      <stop offset="100%" stop-color="#c99b76"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect x="800" y="92" width="230" height="280" rx="26" fill="#fff5eb" fill-opacity=".48"/>
+  <circle cx="230" cy="505" r="138" fill="#ffffff" fill-opacity=".18"/>
+  <g fill="#5f4134" font-family="'Noto Sans TC', 'Microsoft JhengHei', sans-serif">
+    <text x="92" y="154" font-size="36">Yilan Taiwan Theater Museum</text>
+    <text x="92" y="248" font-size="62" font-weight="700">週末劇場與戲曲 DIY</text>
+    <text x="92" y="326" font-size="38">9/12、9/19、9/26</text>
+    <text x="92" y="404" font-size="30">免費入場｜5 歲可陪同</text>
+  </g>
+</svg>
